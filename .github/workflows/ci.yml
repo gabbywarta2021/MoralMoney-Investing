@@ -57,7 +57,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           if [ -f pytest.ini ] || [ -d tests ]; then
-            pytest --maxfail=1 --disable-warnings -q --cov=backend --cov-report=xml --cov-report=term-missing
+              pytest --maxfail=1 --disable-warnings -q --cov=backend --cov-report=xml --cov-report=term-missing --cov-fail-under=90
             echo "Uploading coverage to Codecov..."
           else
             echo "No tests found, skipping"
