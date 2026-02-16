@@ -1,6 +1,8 @@
 # MoralMoney Investing — MVP
 
+
 [![CI Tests](https://github.com/gabbywarta2021/MoralMoney-Investing/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/gabbywarta2021/MoralMoney-Investing/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/gabbywarta2021/MoralMoney-Investing?logo=codecov)](https://codecov.io/gh/gabbywarta2021/MoralMoney-Investing)
 
 A small FastAPI backend + OpenAPI contract and generated Python client for the MoralMoney investing MVP.
 
