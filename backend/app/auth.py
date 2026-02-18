@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, Header
-from typing import Optional
+from typing import Optional, Annotated
 from sqlmodel import Session, select
 
 from passlib.context import CryptContext
@@ -18,7 +18,10 @@ def get_db():
 
 
 @router.post("/register", status_code=201)
-def register(payload: dict, db: Session = Depends(get_db)):
+def register(
+    payload: dict,
+    db: Annotated[Session, Depends(get_db)],
+) -> dict:
     email = payload.get("email")
     password = payload.get("password")
     if not email or not password:
@@ -35,7 +38,10 @@ def register(payload: dict, db: Session = Depends(get_db)):
 
 
 @router.post("/login")
-def login(payload: dict, db: Session = Depends(get_db)):
+def login(
+    payload: dict,
+    db: Annotated[Session, Depends(get_db)],
+) -> dict:
     email = payload.get("email")
     password = payload.get("password")
     if not email or not password:
@@ -58,7 +64,10 @@ def _extract_token(authorization: Optional[str]) -> Optional[str]:
     return parts[1]
 
 
-def get_current_user(authorization: Optional[str] = Header(None), db: Session = Depends(get_db)):
+def get_current_user(
+    db: Annotated[Session, Depends(get_db)],
+    authorization: Optional[str] = Header(None),
+) -> User:
     token = _extract_token(authorization)
     if not token:
         raise HTTPException(status_code=401, detail="missing token")
@@ -68,7 +77,9 @@ def get_current_user(authorization: Optional[str] = Header(None), db: Session = 
     return user
 
 
-def get_current_active_admin(current_user: User = Depends(get_current_user)):
+def get_current_active_admin(
+    current_user: Annotated[User, Depends(get_current_user)],
+) -> User:
     if not current_user.is_admin:
         raise HTTPException(status_code=403, detail="admin privileges required")
     return current_user

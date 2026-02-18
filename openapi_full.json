@@ -1,1 +1,8 @@
-{"openapi":"3.0.3","info":{"title":"MoralMoney Investing API","version":"0.1.0"},"paths":{}}
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "MoralMoney Investing API",
+        "version": "0.1.0"
+    },
+    "paths": {}
+}

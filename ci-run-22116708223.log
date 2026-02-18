@@ -1,0 +1,1472 @@
+validate	Set up job	﻿2026-02-17T21:38:54.1987049Z Current runner version: '2.331.0'
+validate	Set up job	2026-02-17T21:38:54.2011549Z ##[group]Runner Image Provisioner
+validate	Set up job	2026-02-17T21:38:54.2012340Z Hosted Compute Agent
+validate	Set up job	2026-02-17T21:38:54.2013049Z Version: 20260123.484
+validate	Set up job	2026-02-17T21:38:54.2013658Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+validate	Set up job	2026-02-17T21:38:54.2014291Z Build Date: 2026-01-23T19:41:17Z
+validate	Set up job	2026-02-17T21:38:54.2015022Z Worker ID: {5ad2f72f-488b-4492-a57a-2f5369ead8d0}
+validate	Set up job	2026-02-17T21:38:54.2015670Z Azure Region: centralus
+validate	Set up job	2026-02-17T21:38:54.2016236Z ##[endgroup]
+validate	Set up job	2026-02-17T21:38:54.2018062Z ##[group]Operating System
+validate	Set up job	2026-02-17T21:38:54.2018692Z Ubuntu
+validate	Set up job	2026-02-17T21:38:54.2019130Z 24.04.3
+validate	Set up job	2026-02-17T21:38:54.2019683Z LTS
+validate	Set up job	2026-02-17T21:38:54.2020156Z ##[endgroup]
+validate	Set up job	2026-02-17T21:38:54.2020965Z ##[group]Runner Image
+validate	Set up job	2026-02-17T21:38:54.2021618Z Image: ubuntu-24.04
+validate	Set up job	2026-02-17T21:38:54.2022098Z Version: 20260209.23.1
+validate	Set up job	2026-02-17T21:38:54.2023086Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260209.23/images/ubuntu/Ubuntu2404-Readme.md
+validate	Set up job	2026-02-17T21:38:54.2024798Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260209.23
+validate	Set up job	2026-02-17T21:38:54.2025728Z ##[endgroup]
+validate	Set up job	2026-02-17T21:38:54.2026809Z ##[group]GITHUB_TOKEN Permissions
+validate	Set up job	2026-02-17T21:38:54.2029082Z Contents: read
+validate	Set up job	2026-02-17T21:38:54.2029751Z Metadata: read
+validate	Set up job	2026-02-17T21:38:54.2030242Z Packages: read
+validate	Set up job	2026-02-17T21:38:54.2030956Z ##[endgroup]
+validate	Set up job	2026-02-17T21:38:54.2032873Z Secret source: Actions
+validate	Set up job	2026-02-17T21:38:54.2033977Z Prepare workflow directory
+validate	Set up job	2026-02-17T21:38:54.2362348Z Prepare all required actions
+validate	Set up job	2026-02-17T21:38:54.2401771Z Getting action download info
+validate	Set up job	2026-02-17T21:38:54.6209380Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+validate	Set up job	2026-02-17T21:38:54.7591199Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+validate	Set up job	2026-02-17T21:38:54.9472230Z Complete job name: validate
+validate	Checkout	﻿2026-02-17T21:38:55.0194783Z ##[group]Run actions/checkout@v4
+validate	Checkout	2026-02-17T21:38:55.0195692Z with:
+validate	Checkout	2026-02-17T21:38:55.0196199Z   repository: gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.0196975Z   token: ***
+validate	Checkout	2026-02-17T21:38:55.0197380Z   ssh-strict: true
+validate	Checkout	2026-02-17T21:38:55.0197809Z   ssh-user: git
+validate	Checkout	2026-02-17T21:38:55.0198223Z   persist-credentials: true
+validate	Checkout	2026-02-17T21:38:55.0198697Z   clean: true
+validate	Checkout	2026-02-17T21:38:55.0199126Z   sparse-checkout-cone-mode: true
+validate	Checkout	2026-02-17T21:38:55.0199628Z   fetch-depth: 1
+validate	Checkout	2026-02-17T21:38:55.0200056Z   fetch-tags: false
+validate	Checkout	2026-02-17T21:38:55.0200473Z   show-progress: true
+validate	Checkout	2026-02-17T21:38:55.0201097Z   lfs: false
+validate	Checkout	2026-02-17T21:38:55.0201498Z   submodules: false
+validate	Checkout	2026-02-17T21:38:55.0201936Z   set-safe-directory: true
+validate	Checkout	2026-02-17T21:38:55.0202657Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.1270939Z Syncing repository: gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.1272926Z ##[group]Getting Git version info
+validate	Checkout	2026-02-17T21:38:55.1273840Z Working directory is '/home/runner/work/MoralMoney-Investing/MoralMoney-Investing'
+validate	Checkout	2026-02-17T21:38:55.1275081Z [command]/usr/bin/git version
+validate	Checkout	2026-02-17T21:38:55.1284208Z git version 2.52.0
+validate	Checkout	2026-02-17T21:38:55.1309908Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.1324391Z Temporarily overriding HOME='/home/runner/work/_temp/a36d1bae-83f0-40b0-8260-59e7e952b6a4' before making global git config changes
+validate	Checkout	2026-02-17T21:38:55.1325859Z Adding repository directory to the temporary git global config as a safe directory
+validate	Checkout	2026-02-17T21:38:55.1337469Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.1374878Z Deleting the contents of '/home/runner/work/MoralMoney-Investing/MoralMoney-Investing'
+validate	Checkout	2026-02-17T21:38:55.1378103Z ##[group]Initializing the repository
+validate	Checkout	2026-02-17T21:38:55.1382738Z [command]/usr/bin/git init /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.1475854Z hint: Using 'master' as the name for the initial branch. This default branch name
+validate	Checkout	2026-02-17T21:38:55.1477622Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+validate	Checkout	2026-02-17T21:38:55.1479730Z hint: to use in all of your new repositories, which will suppress this warning,
+validate	Checkout	2026-02-17T21:38:55.1481641Z hint: call:
+validate	Checkout	2026-02-17T21:38:55.1482346Z hint:
+validate	Checkout	2026-02-17T21:38:55.1482877Z hint: 	git config --global init.defaultBranch <name>
+validate	Checkout	2026-02-17T21:38:55.1483484Z hint:
+validate	Checkout	2026-02-17T21:38:55.1484055Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+validate	Checkout	2026-02-17T21:38:55.1485001Z hint: 'development'. The just-created branch can be renamed via this command:
+validate	Checkout	2026-02-17T21:38:55.1485865Z hint:
+validate	Checkout	2026-02-17T21:38:55.1486592Z hint: 	git branch -m <name>
+validate	Checkout	2026-02-17T21:38:55.1487310Z hint:
+validate	Checkout	2026-02-17T21:38:55.1487931Z hint: Disable this message with "git config set advice.defaultBranchName false"
+validate	Checkout	2026-02-17T21:38:55.1489142Z Initialized empty Git repository in /home/runner/work/MoralMoney-Investing/MoralMoney-Investing/.git/
+validate	Checkout	2026-02-17T21:38:55.1491753Z [command]/usr/bin/git remote add origin https://github.com/gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.1524711Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.1525526Z ##[group]Disabling automatic garbage collection
+validate	Checkout	2026-02-17T21:38:55.1528382Z [command]/usr/bin/git config --local gc.auto 0
+validate	Checkout	2026-02-17T21:38:55.1557326Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.1558083Z ##[group]Setting up auth
+validate	Checkout	2026-02-17T21:38:55.1563880Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Checkout	2026-02-17T21:38:55.1594444Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Checkout	2026-02-17T21:38:55.1929942Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Checkout	2026-02-17T21:38:55.1963003Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Checkout	2026-02-17T21:38:55.2190266Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Checkout	2026-02-17T21:38:55.2228277Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Checkout	2026-02-17T21:38:55.2487190Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+validate	Checkout	2026-02-17T21:38:55.2525606Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.2527028Z ##[group]Fetching the repository
+validate	Checkout	2026-02-17T21:38:55.2535617Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a3da30ec25584235d65f13af48b2a58184927a00:refs/remotes/origin/fix/conftest-clean
+validate	Checkout	2026-02-17T21:38:55.5299887Z From https://github.com/gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-17T21:38:55.5301866Z  * [new ref]         a3da30ec25584235d65f13af48b2a58184927a00 -> origin/fix/conftest-clean
+validate	Checkout	2026-02-17T21:38:55.5333970Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.5335435Z ##[group]Determining the checkout info
+validate	Checkout	2026-02-17T21:38:55.5337074Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.5342427Z [command]/usr/bin/git sparse-checkout disable
+validate	Checkout	2026-02-17T21:38:55.5383720Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+validate	Checkout	2026-02-17T21:38:55.5410971Z ##[group]Checking out the ref
+validate	Checkout	2026-02-17T21:38:55.5415874Z [command]/usr/bin/git checkout --progress --force -B fix/conftest-clean refs/remotes/origin/fix/conftest-clean
+validate	Checkout	2026-02-17T21:38:55.5479221Z Switched to a new branch 'fix/conftest-clean'
+validate	Checkout	2026-02-17T21:38:55.5481999Z branch 'fix/conftest-clean' set up to track 'origin/fix/conftest-clean'.
+validate	Checkout	2026-02-17T21:38:55.5488770Z ##[endgroup]
+validate	Checkout	2026-02-17T21:38:55.5524610Z [command]/usr/bin/git log -1 --format=%H
+validate	Checkout	2026-02-17T21:38:55.5548052Z a3da30ec25584235d65f13af48b2a58184927a00
+validate	Set up Python	﻿2026-02-17T21:38:55.5789720Z ##[group]Run actions/setup-python@v4
+validate	Set up Python	2026-02-17T21:38:55.5790310Z with:
+validate	Set up Python	2026-02-17T21:38:55.5790923Z   python-version: 3.11
+validate	Set up Python	2026-02-17T21:38:55.5791378Z   check-latest: false
+validate	Set up Python	2026-02-17T21:38:55.5791958Z   token: ***
+validate	Set up Python	2026-02-17T21:38:55.5792594Z   update-environment: true
+validate	Set up Python	2026-02-17T21:38:55.5793069Z   allow-prereleases: false
+validate	Set up Python	2026-02-17T21:38:55.5793522Z ##[endgroup]
+validate	Set up Python	2026-02-17T21:38:55.7465785Z ##[group]Installed versions
+validate	Set up Python	2026-02-17T21:38:55.7566828Z Successfully set up CPython (3.11.14)
+validate	Set up Python	2026-02-17T21:38:55.7568644Z ##[endgroup]
+validate	Install tooling	﻿2026-02-17T21:38:55.7710339Z ##[group]Run python -m pip install --upgrade pip
+validate	Install tooling	2026-02-17T21:38:55.7712182Z [36;1mpython -m pip install --upgrade pip[0m
+validate	Install tooling	2026-02-17T21:38:55.7714068Z [36;1mif [ -f requirements.txt ]; then pip install -r requirements.txt; fi[0m
+validate	Install tooling	2026-02-17T21:38:55.7716043Z [36;1mpip install openapi-spec-validator ruff[0m
+validate	Install tooling	2026-02-17T21:38:55.7779827Z shell: /usr/bin/bash -e {0}
+validate	Install tooling	2026-02-17T21:38:55.7781172Z env:
+validate	Install tooling	2026-02-17T21:38:55.7782350Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-17T21:38:55.7784336Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib/pkgconfig
+validate	Install tooling	2026-02-17T21:38:55.7786291Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-17T21:38:55.7788075Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-17T21:38:55.7789800Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-17T21:38:55.7791676Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib
+validate	Install tooling	2026-02-17T21:38:55.7793140Z ##[endgroup]
+validate	Install tooling	2026-02-17T21:38:56.4674280Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (26.0.1)
+validate	Install tooling	2026-02-17T21:38:57.2237486Z Collecting fastapi (from -r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:57.3209469Z   Downloading fastapi-0.129.0-py3-none-any.whl.metadata (30 kB)
+validate	Install tooling	2026-02-17T21:38:57.3578566Z Collecting sqlmodel (from -r requirements.txt (line 3))
+validate	Install tooling	2026-02-17T21:38:57.3716137Z   Downloading sqlmodel-0.0.34-py3-none-any.whl.metadata (10 kB)
+validate	Install tooling	2026-02-17T21:38:57.3982488Z Collecting httpx (from -r requirements.txt (line 4))
+validate	Install tooling	2026-02-17T21:38:57.4123335Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+validate	Install tooling	2026-02-17T21:38:57.4360778Z Collecting openapi-spec-validator (from -r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:57.4499282Z   Downloading openapi_spec_validator-0.7.2-py3-none-any.whl.metadata (5.7 kB)
+validate	Install tooling	2026-02-17T21:38:57.4905824Z Collecting openapi-python-client (from -r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:38:57.5063866Z   Downloading openapi_python_client-0.28.2-py3-none-any.whl.metadata (11 kB)
+validate	Install tooling	2026-02-17T21:38:57.5267059Z Collecting python-dateutil (from -r requirements.txt (line 7))
+validate	Install tooling	2026-02-17T21:38:57.5401854Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-17T21:38:57.5784353Z Collecting pytest (from -r requirements.txt (line 12))
+validate	Install tooling	2026-02-17T21:38:57.5918285Z   Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+validate	Install tooling	2026-02-17T21:38:57.6183650Z Collecting pytest-asyncio (from -r requirements.txt (line 13))
+validate	Install tooling	2026-02-17T21:38:57.6318169Z   Downloading pytest_asyncio-1.3.0-py3-none-any.whl.metadata (4.1 kB)
+validate	Install tooling	2026-02-17T21:38:57.6559492Z Collecting anyio (from -r requirements.txt (line 14))
+validate	Install tooling	2026-02-17T21:38:57.6697501Z   Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+validate	Install tooling	2026-02-17T21:38:57.7011170Z Collecting uvicorn[standard] (from -r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:57.7150755Z   Downloading uvicorn-0.41.0-py3-none-any.whl.metadata (6.7 kB)
+validate	Install tooling	2026-02-17T21:38:57.7357999Z Collecting passlib[bcrypt] (from -r requirements.txt (line 8))
+validate	Install tooling	2026-02-17T21:38:57.7494076Z   Downloading passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+validate	Install tooling	2026-02-17T21:38:57.7688977Z Collecting python-jose[cryptography] (from -r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:38:57.7825488Z   Downloading python_jose-3.5.0-py2.py3-none-any.whl.metadata (5.5 kB)
+validate	Install tooling	2026-02-17T21:38:57.8125669Z Collecting starlette<1.0.0,>=0.40.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:57.8260862Z   Downloading starlette-0.52.1-py3-none-any.whl.metadata (6.3 kB)
+validate	Install tooling	2026-02-17T21:38:57.9367189Z Collecting pydantic>=2.7.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:57.9504368Z   Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+validate	Install tooling	2026-02-17T21:38:57.9860387Z Collecting typing-extensions>=4.8.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:57.9991994Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+validate	Install tooling	2026-02-17T21:38:58.0166514Z Collecting typing-inspection>=0.4.2 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:58.0299556Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-17T21:38:58.0471788Z Collecting annotated-doc>=0.0.2 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:38:58.0605963Z   Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+validate	Install tooling	2026-02-17T21:38:58.0833417Z Collecting idna>=2.8 (from anyio->-r requirements.txt (line 14))
+validate	Install tooling	2026-02-17T21:38:58.0964687Z   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-17T21:38:58.1205527Z Collecting click>=7.0 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.1344601Z   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-17T21:38:58.1518323Z Collecting h11>=0.8 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.1651289Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+validate	Install tooling	2026-02-17T21:38:58.2000418Z Collecting httptools>=0.6.3 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.2135128Z   Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+validate	Install tooling	2026-02-17T21:38:58.2369246Z Collecting python-dotenv>=0.13 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.2504844Z   Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+validate	Install tooling	2026-02-17T21:38:58.2930150Z Collecting pyyaml>=5.1 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.3147905Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+validate	Install tooling	2026-02-17T21:38:58.3555544Z Collecting uvloop>=0.15.1 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.3688861Z   Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-17T21:38:58.4413876Z Collecting watchfiles>=0.20 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.4548514Z   Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-17T21:38:58.5570006Z Collecting websockets>=10.4 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-17T21:38:58.5707184Z   Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+validate	Install tooling	2026-02-17T21:38:58.8081872Z Collecting SQLAlchemy<2.1.0,>=2.0.14 (from sqlmodel->-r requirements.txt (line 3))
+validate	Install tooling	2026-02-17T21:38:58.8217159Z   Downloading sqlalchemy-2.0.46-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+validate	Install tooling	2026-02-17T21:38:58.9426421Z Collecting greenlet>=1 (from SQLAlchemy<2.1.0,>=2.0.14->sqlmodel->-r requirements.txt (line 3))
+validate	Install tooling	2026-02-17T21:38:58.9563305Z   Downloading greenlet-3.3.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.7 kB)
+validate	Install tooling	2026-02-17T21:38:58.9851304Z Collecting certifi (from httpx->-r requirements.txt (line 4))
+validate	Install tooling	2026-02-17T21:38:58.9988095Z   Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-17T21:38:59.0211539Z Collecting httpcore==1.* (from httpx->-r requirements.txt (line 4))
+validate	Install tooling	2026-02-17T21:38:59.0346446Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+validate	Install tooling	2026-02-17T21:38:59.0888871Z Collecting jsonschema<5.0.0,>=4.18.0 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.1027741Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+validate	Install tooling	2026-02-17T21:38:59.1259870Z Collecting jsonschema-path<0.4.0,>=0.3.1 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.1396467Z   Downloading jsonschema_path-0.3.4-py3-none-any.whl.metadata (4.3 kB)
+validate	Install tooling	2026-02-17T21:38:59.1785681Z Collecting lazy-object-proxy<2.0.0,>=1.7.1 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.1924610Z   Downloading lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (5.1 kB)
+validate	Install tooling	2026-02-17T21:38:59.2126430Z Collecting openapi-schema-validator<0.7.0,>=0.6.0 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.2261471Z   Downloading openapi_schema_validator-0.6.3-py3-none-any.whl.metadata (5.4 kB)
+validate	Install tooling	2026-02-17T21:38:59.2458933Z Collecting attrs>=22.2.0 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.2588775Z   Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+validate	Install tooling	2026-02-17T21:38:59.2779957Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.2914162Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+validate	Install tooling	2026-02-17T21:38:59.3225160Z Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.3357469Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+validate	Install tooling	2026-02-17T21:38:59.5733778Z Collecting rpds-py>=0.25.0 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.5871600Z   Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+validate	Install tooling	2026-02-17T21:38:59.6096994Z Collecting pathable<0.5.0,>=0.4.1 (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.6228985Z   Downloading pathable-0.4.4-py3-none-any.whl.metadata (1.8 kB)
+validate	Install tooling	2026-02-17T21:38:59.6279539Z Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.6413635Z   Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+validate	Install tooling	2026-02-17T21:38:59.6686788Z Collecting requests<3.0.0,>=2.31.0 (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.6821528Z   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-17T21:38:59.7028468Z Collecting rfc3339-validator (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.7168987Z   Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+validate	Install tooling	2026-02-17T21:38:59.7958606Z Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.8094046Z   Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+validate	Install tooling	2026-02-17T21:38:59.8785068Z Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-17T21:38:59.8921396Z   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+validate	Install tooling	2026-02-17T21:38:59.9203540Z Collecting jinja2<4.0.0,>=3.0.0 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:38:59.9351838Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+validate	Install tooling	2026-02-17T21:39:00.0554157Z Collecting ruamel-yaml<0.20.0,>=0.18.6 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:00.0688116Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+validate	Install tooling	2026-02-17T21:39:00.4408741Z Collecting ruff>=0.2 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:00.4561199Z   Downloading ruff-0.15.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (26 kB)
+validate	Install tooling	2026-02-17T21:39:00.4776399Z Collecting shellingham<2.0.0,>=1.3.2 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:00.4907079Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+validate	Install tooling	2026-02-17T21:39:00.5139453Z Collecting typer<0.24,>0.16 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:00.5278716Z   Downloading typer-0.23.2-py3-none-any.whl.metadata (16 kB)
+validate	Install tooling	2026-02-17T21:39:00.5489789Z Collecting six>=1.5 (from python-dateutil->-r requirements.txt (line 7))
+validate	Install tooling	2026-02-17T21:39:00.5623450Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+validate	Install tooling	2026-02-17T21:39:00.6162766Z Collecting MarkupSafe>=2.0 (from jinja2<4.0.0,>=3.0.0->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:00.6301140Z   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+validate	Install tooling	2026-02-17T21:39:00.6473311Z Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:39:00.6606141Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+validate	Install tooling	2026-02-17T21:39:01.2921560Z Collecting pydantic-core==2.41.5 (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-17T21:39:01.3061212Z   Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+validate	Install tooling	2026-02-17T21:39:01.3464153Z Collecting rich>=12.3.0 (from typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:01.3598680Z   Downloading rich-14.3.2-py3-none-any.whl.metadata (18 kB)
+validate	Install tooling	2026-02-17T21:39:01.4058840Z Collecting bcrypt>=3.1.0 (from passlib[bcrypt]->-r requirements.txt (line 8))
+validate	Install tooling	2026-02-17T21:39:01.4192865Z   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+validate	Install tooling	2026-02-17T21:39:01.4393181Z Collecting ecdsa!=0.15 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:01.4528826Z   Downloading ecdsa-0.19.1-py2.py3-none-any.whl.metadata (29 kB)
+validate	Install tooling	2026-02-17T21:39:01.4753809Z Collecting rsa!=4.1.1,!=4.4,<5.0,>=4.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:01.4884809Z   Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+validate	Install tooling	2026-02-17T21:39:01.5146150Z Collecting pyasn1>=0.5.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:01.5284249Z   Downloading pyasn1-0.6.2-py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-17T21:39:01.6861124Z Collecting cryptography>=3.4.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:01.7001719Z   Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+validate	Install tooling	2026-02-17T21:39:01.7228885Z Collecting iniconfig>=1.0.1 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-17T21:39:01.7359972Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-17T21:39:01.7566888Z Collecting packaging>=22 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-17T21:39:01.7700024Z   Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+validate	Install tooling	2026-02-17T21:39:01.7880124Z Collecting pluggy<2,>=1.5 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-17T21:39:01.8015025Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+validate	Install tooling	2026-02-17T21:39:01.8264449Z Collecting pygments>=2.7.2 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-17T21:39:01.8397556Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-17T21:39:02.0283390Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:02.0421077Z   Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-17T21:39:02.0605520Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-17T21:39:02.0738118Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+validate	Install tooling	2026-02-17T21:39:02.1043009Z Collecting markdown-it-py>=2.2.0 (from rich>=12.3.0->typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:02.1178607Z   Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+validate	Install tooling	2026-02-17T21:39:02.1384220Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.3.0->typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-17T21:39:02.1519938Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+validate	Install tooling	2026-02-17T21:39:02.1777710Z Downloading fastapi-0.129.0-py3-none-any.whl (102 kB)
+validate	Install tooling	2026-02-17T21:39:02.1954406Z Downloading starlette-0.52.1-py3-none-any.whl (74 kB)
+validate	Install tooling	2026-02-17T21:39:02.2116018Z Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+validate	Install tooling	2026-02-17T21:39:02.2357398Z Downloading uvicorn-0.41.0-py3-none-any.whl (68 kB)
+validate	Install tooling	2026-02-17T21:39:02.2455516Z Downloading sqlmodel-0.0.34-py3-none-any.whl (27 kB)
+validate	Install tooling	2026-02-17T21:39:02.2608172Z Downloading sqlalchemy-2.0.46-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+validate	Install tooling	2026-02-17T21:39:02.3093378Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 87.7 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:02.3226463Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+validate	Install tooling	2026-02-17T21:39:02.3378954Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+validate	Install tooling	2026-02-17T21:39:02.3535620Z Downloading openapi_spec_validator-0.7.2-py3-none-any.whl (39 kB)
+validate	Install tooling	2026-02-17T21:39:02.3706593Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+validate	Install tooling	2026-02-17T21:39:02.3865364Z Downloading jsonschema_path-0.3.4-py3-none-any.whl (14 kB)
+validate	Install tooling	2026-02-17T21:39:02.4019544Z Downloading lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (68 kB)
+validate	Install tooling	2026-02-17T21:39:02.4173276Z Downloading openapi_schema_validator-0.6.3-py3-none-any.whl (8.8 kB)
+validate	Install tooling	2026-02-17T21:39:02.4326228Z Downloading pathable-0.4.4-py3-none-any.whl (9.6 kB)
+validate	Install tooling	2026-02-17T21:39:02.4481435Z Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+validate	Install tooling	2026-02-17T21:39:02.4632978Z Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+validate	Install tooling	2026-02-17T21:39:02.4788483Z Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (151 kB)
+validate	Install tooling	2026-02-17T21:39:02.4950938Z Downloading idna-3.11-py3-none-any.whl (71 kB)
+validate	Install tooling	2026-02-17T21:39:02.5104697Z Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+validate	Install tooling	2026-02-17T21:39:02.5281629Z Downloading openapi_python_client-0.28.2-py3-none-any.whl (183 kB)
+validate	Install tooling	2026-02-17T21:39:02.5437991Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+validate	Install tooling	2026-02-17T21:39:02.5597725Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+validate	Install tooling	2026-02-17T21:39:02.5758118Z Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+validate	Install tooling	2026-02-17T21:39:02.5925695Z Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+validate	Install tooling	2026-02-17T21:39:02.6038153Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 200.2 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:02.6170274Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+validate	Install tooling	2026-02-17T21:39:02.6325599Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+validate	Install tooling	2026-02-17T21:39:02.6479542Z Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+validate	Install tooling	2026-02-17T21:39:02.6640937Z Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+validate	Install tooling	2026-02-17T21:39:02.6693544Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 84.8 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:02.6826068Z Downloading python_jose-3.5.0-py2.py3-none-any.whl (34 kB)
+validate	Install tooling	2026-02-17T21:39:02.6981807Z Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+validate	Install tooling	2026-02-17T21:39:02.7133968Z Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+validate	Install tooling	2026-02-17T21:39:02.7301861Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+validate	Install tooling	2026-02-17T21:39:02.7454181Z Downloading pytest_asyncio-1.3.0-py3-none-any.whl (15 kB)
+validate	Install tooling	2026-02-17T21:39:02.7605655Z Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+validate	Install tooling	2026-02-17T21:39:02.7761889Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+validate	Install tooling	2026-02-17T21:39:02.7917080Z Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+validate	Install tooling	2026-02-17T21:39:02.8083702Z Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl (278 kB)
+validate	Install tooling	2026-02-17T21:39:02.8245131Z Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+validate	Install tooling	2026-02-17T21:39:02.8401612Z Downloading click-8.3.1-py3-none-any.whl (108 kB)
+validate	Install tooling	2026-02-17T21:39:02.8559106Z Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+validate	Install tooling	2026-02-17T21:39:02.8783483Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 209.6 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:02.8919097Z Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+validate	Install tooling	2026-02-17T21:39:02.9075793Z Downloading ecdsa-0.19.1-py2.py3-none-any.whl (150 kB)
+validate	Install tooling	2026-02-17T21:39:02.9234142Z Downloading greenlet-3.3.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (590 kB)
+validate	Install tooling	2026-02-17T21:39:02.9287631Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 590.3/590.3 kB 102.0 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:02.9424573Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+validate	Install tooling	2026-02-17T21:39:02.9578035Z Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (456 kB)
+validate	Install tooling	2026-02-17T21:39:02.9749777Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+validate	Install tooling	2026-02-17T21:39:02.9899407Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+validate	Install tooling	2026-02-17T21:39:03.0057629Z Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+validate	Install tooling	2026-02-17T21:39:03.0208904Z Downloading packaging-26.0-py3-none-any.whl (74 kB)
+validate	Install tooling	2026-02-17T21:39:03.0362904Z Downloading pyasn1-0.6.2-py3-none-any.whl (83 kB)
+validate	Install tooling	2026-02-17T21:39:03.0517482Z Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+validate	Install tooling	2026-02-17T21:39:03.0595770Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 170.1 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:03.0728497Z Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+validate	Install tooling	2026-02-17T21:39:03.0883199Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+validate	Install tooling	2026-02-17T21:39:03.0950752Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 117.9 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:03.1083504Z Downloading rich-14.3.2-py3-none-any.whl (309 kB)
+validate	Install tooling	2026-02-17T21:39:03.1249859Z Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+validate	Install tooling	2026-02-17T21:39:03.1422527Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+validate	Install tooling	2026-02-17T21:39:03.1576957Z Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (390 kB)
+validate	Install tooling	2026-02-17T21:39:03.1741337Z Downloading ruff-0.15.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.1 MB)
+validate	Install tooling	2026-02-17T21:39:03.2237395Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 229.0 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:03.2373892Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+validate	Install tooling	2026-02-17T21:39:03.2525569Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+validate	Install tooling	2026-02-17T21:39:03.2677630Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+validate	Install tooling	2026-02-17T21:39:03.2831040Z Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+validate	Install tooling	2026-02-17T21:39:03.3004250Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 234.7 MB/s  0:00:00
+validate	Install tooling	2026-02-17T21:39:03.3148683Z Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+validate	Install tooling	2026-02-17T21:39:03.3319781Z Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (184 kB)
+validate	Install tooling	2026-02-17T21:39:03.3480022Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+validate	Install tooling	2026-02-17T21:39:03.3634012Z Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+validate	Install tooling	2026-02-17T21:39:03.5185855Z Installing collected packages: passlib, websockets, uvloop, urllib3, typing-extensions, six, shellingham, ruff, ruamel-yaml, rpds-py, pyyaml, python-dotenv, pygments, pycparser, pyasn1, pluggy, pathable, packaging, mdurl, MarkupSafe, lazy-object-proxy, iniconfig, idna, httptools, h11, greenlet, click, charset_normalizer, certifi, bcrypt, attrs, annotated-types, annotated-doc, uvicorn, typing-inspection, SQLAlchemy, rsa, rfc3339-validator, requests, referencing, python-dateutil, pytest, pydantic-core, markdown-it-py, jinja2, httpcore, ecdsa, cffi, anyio, watchfiles, starlette, rich, python-jose, pytest-asyncio, pydantic, jsonschema-specifications, jsonschema-path, httpx, cryptography, typer, sqlmodel, jsonschema, fastapi, openapi-schema-validator, openapi-python-client, openapi-spec-validator
+validate	Install tooling	2026-02-17T21:39:08.2240366Z 
+validate	Install tooling	2026-02-17T21:39:08.2273061Z Successfully installed MarkupSafe-3.0.3 SQLAlchemy-2.0.46 annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.12.1 attrs-25.4.0 bcrypt-5.0.0 certifi-2026.1.4 cffi-2.0.0 charset_normalizer-3.4.4 click-8.3.1 cryptography-46.0.5 ecdsa-0.19.1 fastapi-0.129.0 greenlet-3.3.1 h11-0.16.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 idna-3.11 iniconfig-2.3.0 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-path-0.3.4 jsonschema-specifications-2025.9.1 lazy-object-proxy-1.12.0 markdown-it-py-4.0.0 mdurl-0.1.2 openapi-python-client-0.28.2 openapi-schema-validator-0.6.3 openapi-spec-validator-0.7.2 packaging-26.0 passlib-1.7.4 pathable-0.4.4 pluggy-1.6.0 pyasn1-0.6.2 pycparser-3.0 pydantic-2.12.5 pydantic-core-2.41.5 pygments-2.19.2 pytest-9.0.2 pytest-asyncio-1.3.0 python-dateutil-2.9.0.post0 python-dotenv-1.2.1 python-jose-3.5.0 pyyaml-6.0.3 referencing-0.36.2 requests-2.32.5 rfc3339-validator-0.1.4 rich-14.3.2 rpds-py-0.30.0 rsa-4.9.1 ruamel-yaml-0.19.1 ruff-0.15.1 shellingham-1.5.4 six-1.17.0 sqlmodel-0.0.34 starlette-0.52.1 typer-0.23.2 typing-extensions-4.15.0 typing-inspection-0.4.2 urllib3-2.6.3 uvicorn-0.41.0 uvloop-0.22.1 watchfiles-1.1.1 websockets-16.0
+validate	Install tooling	2026-02-17T21:39:09.0312474Z Requirement already satisfied: openapi-spec-validator in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (0.7.2)
+validate	Install tooling	2026-02-17T21:39:09.0315753Z Requirement already satisfied: ruff in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (0.15.1)
+validate	Install tooling	2026-02-17T21:39:09.0328431Z Requirement already satisfied: jsonschema<5.0.0,>=4.18.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (4.26.0)
+validate	Install tooling	2026-02-17T21:39:09.0334477Z Requirement already satisfied: jsonschema-path<0.4.0,>=0.3.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (0.3.4)
+validate	Install tooling	2026-02-17T21:39:09.0339823Z Requirement already satisfied: lazy-object-proxy<2.0.0,>=1.7.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (1.12.0)
+validate	Install tooling	2026-02-17T21:39:09.0345408Z Requirement already satisfied: openapi-schema-validator<0.7.0,>=0.6.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (0.6.3)
+validate	Install tooling	2026-02-17T21:39:09.0355114Z Requirement already satisfied: attrs>=22.2.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (25.4.0)
+validate	Install tooling	2026-02-17T21:39:09.0360115Z Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (2025.9.1)
+validate	Install tooling	2026-02-17T21:39:09.0365060Z Requirement already satisfied: referencing>=0.28.4 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (0.36.2)
+validate	Install tooling	2026-02-17T21:39:09.0369352Z Requirement already satisfied: rpds-py>=0.25.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (0.30.0)
+validate	Install tooling	2026-02-17T21:39:09.0388707Z Requirement already satisfied: PyYAML>=5.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (6.0.3)
+validate	Install tooling	2026-02-17T21:39:09.0394105Z Requirement already satisfied: pathable<0.5.0,>=0.4.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (0.4.4)
+validate	Install tooling	2026-02-17T21:39:09.0401166Z Requirement already satisfied: requests<3.0.0,>=2.31.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2.32.5)
+validate	Install tooling	2026-02-17T21:39:09.0417599Z Requirement already satisfied: rfc3339-validator in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator) (0.1.4)
+validate	Install tooling	2026-02-17T21:39:09.0435374Z Requirement already satisfied: typing-extensions>=4.4.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from referencing>=0.28.4->jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (4.15.0)
+validate	Install tooling	2026-02-17T21:39:09.0446286Z Requirement already satisfied: charset_normalizer<4,>=2 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (3.4.4)
+validate	Install tooling	2026-02-17T21:39:09.0450682Z Requirement already satisfied: idna<4,>=2.5 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (3.11)
+validate	Install tooling	2026-02-17T21:39:09.0455111Z Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2.6.3)
+validate	Install tooling	2026-02-17T21:39:09.0459348Z Requirement already satisfied: certifi>=2017.4.17 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2026.1.4)
+validate	Install tooling	2026-02-17T21:39:09.0544133Z Requirement already satisfied: six in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from rfc3339-validator->openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator) (1.17.0)
+validate	Lint (ruff)	﻿2026-02-17T21:39:09.1426177Z ##[group]Run echo "Running ruff lint..."
+validate	Lint (ruff)	2026-02-17T21:39:09.1426527Z [36;1mecho "Running ruff lint..."[0m
+validate	Lint (ruff)	2026-02-17T21:39:09.1426777Z [36;1mruff check .[0m
+validate	Lint (ruff)	2026-02-17T21:39:09.1478682Z shell: /usr/bin/bash -e {0}
+validate	Lint (ruff)	2026-02-17T21:39:09.1478913Z env:
+validate	Lint (ruff)	2026-02-17T21:39:09.1479168Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-17T21:39:09.1479589Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib/pkgconfig
+validate	Lint (ruff)	2026-02-17T21:39:09.1480022Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-17T21:39:09.1480405Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-17T21:39:09.1480967Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-17T21:39:09.1481337Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib
+validate	Lint (ruff)	2026-02-17T21:39:09.1481635Z ##[endgroup]
+validate	Lint (ruff)	2026-02-17T21:39:09.1553008Z Running ruff lint...
+validate	Lint (ruff)	2026-02-17T21:39:09.1632900Z I001 [*] Import block is un-sorted or un-formatted
+validate	Lint (ruff)	2026-02-17T21:39:09.1633601Z  --> generated_client/moral_money_investing_api_client/client.py:1:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1634236Z   |
+validate	Lint (ruff)	2026-02-17T21:39:09.1634397Z 1 | / import ssl
+validate	Lint (ruff)	2026-02-17T21:39:09.1634601Z 2 | | from typing import Any
+validate	Lint (ruff)	2026-02-17T21:39:09.1634861Z 3 | |
+validate	Lint (ruff)	2026-02-17T21:39:09.1635187Z 4 | | from attrs import define, field, evolve
+validate	Lint (ruff)	2026-02-17T21:39:09.1635627Z 5 | | import httpx
+validate	Lint (ruff)	2026-02-17T21:39:09.1635931Z   | |____________^
+validate	Lint (ruff)	2026-02-17T21:39:09.1636213Z   |
+validate	Lint (ruff)	2026-02-17T21:39:09.1636500Z help: Organize imports
+validate	Lint (ruff)	2026-02-17T21:39:09.1636720Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1636906Z I001 [*] Import block is un-sorted or un-formatted
+validate	Lint (ruff)	2026-02-17T21:39:09.1637546Z  --> generated_client/moral_money_investing_api_client/types.py:3:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1638301Z   |
+validate	Lint (ruff)	2026-02-17T21:39:09.1638647Z 1 |   """ Contains some shared types for properties """
+validate	Lint (ruff)	2026-02-17T21:39:09.1639117Z 2 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1639478Z 3 | / from collections.abc import Mapping, MutableMapping
+validate	Lint (ruff)	2026-02-17T21:39:09.1639866Z 4 | | from http import HTTPStatus
+validate	Lint (ruff)	2026-02-17T21:39:09.1640168Z 5 | | from typing import BinaryIO, Generic, TypeVar, Literal, IO
+validate	Lint (ruff)	2026-02-17T21:39:09.1640471Z 6 | |
+validate	Lint (ruff)	2026-02-17T21:39:09.1640879Z 7 | | from attrs import define
+validate	Lint (ruff)	2026-02-17T21:39:09.1641112Z   | |________________________^
+validate	Lint (ruff)	2026-02-17T21:39:09.1641305Z   |
+validate	Lint (ruff)	2026-02-17T21:39:09.1641468Z help: Organize imports
+validate	Lint (ruff)	2026-02-17T21:39:09.1641591Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1641693Z E741 Ambiguous variable name: `l`
+validate	Lint (ruff)	2026-02-17T21:39:09.1642119Z   --> scripts/example_client.py:28:9
+validate	Lint (ruff)	2026-02-17T21:39:09.1642741Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1642992Z 26 |     try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1643424Z 27 |         login_payload = {"email": "test@example.com", "password": "testpass"}
+validate	Lint (ruff)	2026-02-17T21:39:09.1643870Z 28 |         l = httpx_client.post("/api/v1/auth/login", json=login_payload)
+validate	Lint (ruff)	2026-02-17T21:39:09.1644193Z    |         ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1644385Z 29 |         print("login ->", l.status_code)
+validate	Lint (ruff)	2026-02-17T21:39:09.1644665Z 30 |         if l.status_code == 200:
+validate	Lint (ruff)	2026-02-17T21:39:09.1644932Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1645018Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1645122Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1645403Z   --> scripts/generate_openapi_full.py:88:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1645653Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1645801Z 86 | }
+validate	Lint (ruff)	2026-02-17T21:39:09.1645956Z 87 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1646144Z 88 | p["/api/v1/providers/{providerId}"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1646392Z    | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1646542Z 89 |   "put": {
+validate	Lint (ruff)	2026-02-17T21:39:09.1646750Z 90 |     "summary": "Update provider (admin)",
+validate	Lint (ruff)	2026-02-17T21:39:09.1646990Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1647080Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1647175Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1647445Z   --> scripts/generate_openapi_full.py:88:37
+validate	Lint (ruff)	2026-02-17T21:39:09.1647694Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1647852Z 86 | }
+validate	Lint (ruff)	2026-02-17T21:39:09.1647997Z 87 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1648182Z 88 | p["/api/v1/providers/{providerId}"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1648433Z    |                                     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1648661Z 89 |   "put": {
+validate	Lint (ruff)	2026-02-17T21:39:09.1648856Z 90 |     "summary": "Update provider (admin)",
+validate	Lint (ruff)	2026-02-17T21:39:09.1649299Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1649385Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1649481Z invalid-syntax: Expected `:`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1649770Z    --> scripts/generate_openapi_full.py:102:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1650020Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1650172Z 100 | }
+validate	Lint (ruff)	2026-02-17T21:39:09.1650322Z 101 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1650689Z 102 | p["/api/v1/providers/{providerId}/sync"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1651088Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1651243Z 103 |   "post": {
+validate	Lint (ruff)	2026-02-17T21:39:09.1651449Z 104 |     "summary": "Trigger provider sync",
+validate	Lint (ruff)	2026-02-17T21:39:09.1651796Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1651958Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1652115Z invalid-syntax: Expected `,`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1652579Z    --> scripts/generate_openapi_full.py:102:42
+validate	Lint (ruff)	2026-02-17T21:39:09.1653004Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1653254Z 100 | }
+validate	Lint (ruff)	2026-02-17T21:39:09.1653493Z 101 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1653826Z 102 | p["/api/v1/providers/{providerId}/sync"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1654287Z     |                                          ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1654692Z 103 |   "post": {
+validate	Lint (ruff)	2026-02-17T21:39:09.1655021Z 104 |     "summary": "Trigger provider sync",
+validate	Lint (ruff)	2026-02-17T21:39:09.1655430Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1655572Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1655726Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1656200Z    --> scripts/generate_openapi_full.py:111:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1656610Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1656856Z 110 | # Tags
+validate	Lint (ruff)	2026-02-17T21:39:09.1657146Z 111 | p["/api/v1/tags"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1657471Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1658665Z 112 |   "get": {"summary": "List tags", "responses": {"200": {"description": "Tags list", "content": {"application/json": {"schema": {"type…
+validate	Lint (ruff)	2026-02-17T21:39:09.1660234Z 113 |   "post": {"summary": "Create tag", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/componen…
+validate	Lint (ruff)	2026-02-17T21:39:09.1661393Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1661543Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1661698Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1662172Z    --> scripts/generate_openapi_full.py:111:19
+validate	Lint (ruff)	2026-02-17T21:39:09.1662622Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1662998Z 110 | # Tags
+validate	Lint (ruff)	2026-02-17T21:39:09.1663260Z 111 | p["/api/v1/tags"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1663472Z     |                   ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1664031Z 112 |   "get": {"summary": "List tags", "responses": {"200": {"description": "Tags list", "content": {"application/json": {"schema": {"type…
+validate	Lint (ruff)	2026-02-17T21:39:09.1665127Z 113 |   "post": {"summary": "Create tag", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/componen…
+validate	Lint (ruff)	2026-02-17T21:39:09.1666219Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1666382Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1666552Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1667032Z    --> scripts/generate_openapi_full.py:116:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1667459Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1667621Z 115 | # Instruments
+validate	Lint (ruff)	2026-02-17T21:39:09.1667821Z 116 | p["/api/v1/instruments"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1668037Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1668567Z 117 |   "get": {"summary": "List instruments", "responses": {"200": {"description": "Instruments", "content": {"application/json": {"schema…
+validate	Lint (ruff)	2026-02-17T21:39:09.1669424Z 118 |   "post": {"summary": "Create instrument", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/c…
+validate	Lint (ruff)	2026-02-17T21:39:09.1669942Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1670031Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1670132Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1670423Z    --> scripts/generate_openapi_full.py:116:26
+validate	Lint (ruff)	2026-02-17T21:39:09.1670950Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1671112Z 115 | # Instruments
+validate	Lint (ruff)	2026-02-17T21:39:09.1671314Z 116 | p["/api/v1/instruments"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1671542Z     |                          ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1672100Z 117 |   "get": {"summary": "List instruments", "responses": {"200": {"description": "Instruments", "content": {"application/json": {"schema…
+validate	Lint (ruff)	2026-02-17T21:39:09.1672952Z 118 |   "post": {"summary": "Create instrument", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/c…
+validate	Lint (ruff)	2026-02-17T21:39:09.1673636Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1673733Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1673832Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1674107Z    --> scripts/generate_openapi_full.py:121:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1674356Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1674508Z 120 | # Preferences
+validate	Lint (ruff)	2026-02-17T21:39:09.1674717Z 121 | p["/api/v1/users/me/preferences"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1674963Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1675478Z 122 |   "get": {"summary": "Get current user's preferences", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "resp…
+validate	Lint (ruff)	2026-02-17T21:39:09.1676348Z 123 |   "post": {"summary": "Add preference for current user", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "re…
+validate	Lint (ruff)	2026-02-17T21:39:09.1676863Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1676961Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1677050Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1677323Z    --> scripts/generate_openapi_full.py:121:35
+validate	Lint (ruff)	2026-02-17T21:39:09.1677572Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1677733Z 120 | # Preferences
+validate	Lint (ruff)	2026-02-17T21:39:09.1677928Z 121 | p["/api/v1/users/me/preferences"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1678180Z     |                                   ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1678736Z 122 |   "get": {"summary": "Get current user's preferences", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "resp…
+validate	Lint (ruff)	2026-02-17T21:39:09.1679576Z 123 |   "post": {"summary": "Add preference for current user", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "re…
+validate	Lint (ruff)	2026-02-17T21:39:09.1680086Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1680178Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1680270Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1680740Z    --> scripts/generate_openapi_full.py:126:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1681007Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1681162Z 125 | # Watchlist
+validate	Lint (ruff)	2026-02-17T21:39:09.1681353Z 126 | p["/api/v1/users/me/watchlist"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1681587Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1682070Z 127 |   "get": {"summary": "Get current user's watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "respon…
+validate	Lint (ruff)	2026-02-17T21:39:09.1682926Z 128 |   "post": {"summary": "Add to watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"r…
+validate	Lint (ruff)	2026-02-17T21:39:09.1683438Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1683523Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1683610Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1683882Z    --> scripts/generate_openapi_full.py:126:33
+validate	Lint (ruff)	2026-02-17T21:39:09.1684263Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1684415Z 125 | # Watchlist
+validate	Lint (ruff)	2026-02-17T21:39:09.1684605Z 126 | p["/api/v1/users/me/watchlist"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1684846Z     |                                 ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1685397Z 127 |   "get": {"summary": "Get current user's watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "respon…
+validate	Lint (ruff)	2026-02-17T21:39:09.1686238Z 128 |   "post": {"summary": "Add to watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"r…
+validate	Lint (ruff)	2026-02-17T21:39:09.1686753Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1686837Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1686928Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1687198Z    --> scripts/generate_openapi_full.py:131:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1687434Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1687585Z 130 | # Allocate
+validate	Lint (ruff)	2026-02-17T21:39:09.1687766Z 131 | p["/api/v1/allocate"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1687977Z     | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1688468Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-17T21:39:09.1688981Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1689066Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1689160Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1689425Z    --> scripts/generate_openapi_full.py:131:23
+validate	Lint (ruff)	2026-02-17T21:39:09.1689673Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1689816Z 130 | # Allocate
+validate	Lint (ruff)	2026-02-17T21:39:09.1689998Z 131 | p["/api/v1/allocate"] = {
+validate	Lint (ruff)	2026-02-17T21:39:09.1690210Z     |                       ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1691017Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-17T21:39:09.1691683Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1691773Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1691872Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1692141Z    --> scripts/generate_openapi_full.py:134:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1692384Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1692878Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-17T21:39:09.1693399Z 133 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1693561Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1693748Z     | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1693905Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1694131Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1694438Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1694526Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1694617Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1694893Z    --> scripts/generate_openapi_full.py:134:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1695139Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1695647Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-17T21:39:09.1696163Z 133 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1696316Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1696507Z     |               ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1696677Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1696907Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1697208Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1697298Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1697395Z invalid-syntax: Expected `:`, found `with`
+validate	Lint (ruff)	2026-02-17T21:39:09.1697678Z    --> scripts/generate_openapi_full.py:136:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1697922Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1698080Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1698257Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1698499Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1698800Z     | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1699019Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-17T21:39:09.1699288Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1699387Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1699480Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1699755Z    --> scripts/generate_openapi_full.py:136:6
+validate	Lint (ruff)	2026-02-17T21:39:09.1699999Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1700160Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1700338Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1700750Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1701193Z     |      ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1701566Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-17T21:39:09.1701835Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1701929Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1702022Z invalid-syntax: Expected `:`, found `as`
+validate	Lint (ruff)	2026-02-17T21:39:09.1702302Z    --> scripts/generate_openapi_full.py:136:55
+validate	Lint (ruff)	2026-02-17T21:39:09.1702549Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1702720Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1702905Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1703138Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1703461Z     |                                                       ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1703779Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-17T21:39:09.1704044Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1704136Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1704332Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1704604Z    --> scripts/generate_openapi_full.py:136:58
+validate	Lint (ruff)	2026-02-17T21:39:09.1704852Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1705015Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-17T21:39:09.1705205Z 135 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1705431Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-17T21:39:09.1705749Z     |                                                          ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1706050Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-17T21:39:09.1706313Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1706402Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1706495Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1706761Z    --> scripts/generate_openapi_full.py:139:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1707002Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1707207Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-17T21:39:09.1707585Z 138 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1707766Z 139 | print("generated openapi_full.json")
+validate	Lint (ruff)	2026-02-17T21:39:09.1708006Z     | ^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1708164Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1708247Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1708353Z invalid-syntax: unexpected EOF while parsing
+validate	Lint (ruff)	2026-02-17T21:39:09.1708639Z    --> scripts/generate_openapi_full.py:140:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1708880Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1709064Z 139 | print("generated openapi_full.json")
+validate	Lint (ruff)	2026-02-17T21:39:09.1709316Z     |                                     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1709532Z     |
+validate	Lint (ruff)	2026-02-17T21:39:09.1709618Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1709794Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1710140Z   --> tests/conftest.py:42:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1710348Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1710860Z 40 |     # Insert some test providers, tags, and instruments for use by tests
+validate	Lint (ruff)	2026-02-17T21:39:09.1711240Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1711541Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1711823Z    | ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1711997Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1712290Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1712598Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1712686Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1712777Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1713036Z   --> tests/conftest.py:42:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1713238Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1713493Z 40 |     # Insert some test providers, tags, and instruments for use by tests
+validate	Lint (ruff)	2026-02-17T21:39:09.1713849Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1714156Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1714432Z    |               ^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1714637Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1714929Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1715442Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1715599Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1715987Z invalid-syntax: Compound statements are not allowed on the same line as simple statements
+validate	Lint (ruff)	2026-02-17T21:39:09.1716450Z   --> tests/conftest.py:42:25
+validate	Lint (ruff)	2026-02-17T21:39:09.1716662Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1716918Z 40 |     # Insert some test providers, tags, and instruments for use by tests
+validate	Lint (ruff)	2026-02-17T21:39:09.1717272Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1717721Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1717996Z    |                         ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1718209Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1718493Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1718803Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1718889Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1718982Z invalid-syntax: Expected `:`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1719239Z   --> tests/conftest.py:42:35
+validate	Lint (ruff)	2026-02-17T21:39:09.1719449Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1719692Z 40 |     # Insert some test providers, tags, and instruments for use by tests
+validate	Lint (ruff)	2026-02-17T21:39:09.1720052Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1720341Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1720809Z    |                                   ^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1721065Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1721361Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1721674Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1721758Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1721954Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1722338Z   --> tests/conftest.py:42:47
+validate	Lint (ruff)	2026-02-17T21:39:09.1722540Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1722790Z 40 |     # Insert some test providers, tags, and instruments for use by tests
+validate	Lint (ruff)	2026-02-17T21:39:09.1723140Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1723437Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1723727Z    |                                               ^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1724105Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1724403Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1724704Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1724790Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1724890Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1725146Z   --> tests/conftest.py:43:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1725348Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1725525Z 41 |     with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1725817Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1726099Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1726303Z    | ^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1726549Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1726857Z 45 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1727035Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1727118Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1727211Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1727466Z   --> tests/conftest.py:44:33
+validate	Lint (ruff)	2026-02-17T21:39:09.1727672Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1727873Z 42 |   import tAdd providers if thfrom sqlmodeeady exist
+validate	Lint (ruff)	2026-02-17T21:39:09.1728152Z 43 |         p1 = session.exec(
+validate	Lint (ruff)	2026-02-17T21:39:09.1728434Z 44 |             select(Providerfrom backeovider.name == "Provider One")
+validate	Lint (ruff)	2026-02-17T21:39:09.1728753Z    |                                 ^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1728982Z 45 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1729170Z 46 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1729345Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1729433Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1729631Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1730001Z   --> tests/conftest.py:47:19
+validate	Lint (ruff)	2026-02-17T21:39:09.1730205Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1730352Z 45 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1730693Z 46 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1730923Z 47 |             p1def setup_test_db():
+validate	Lint (ruff)	2026-02-17T21:39:09.1731154Z    |                   ^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1731587Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1732039Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1732235Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1732316Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1732409Z invalid-syntax: Expected an expression
+validate	Lint (ruff)	2026-02-17T21:39:09.1732671Z   --> tests/conftest.py:47:35
+validate	Lint (ruff)	2026-02-17T21:39:09.1732873Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1733021Z 45 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1733336Z 46 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1733533Z 47 |             p1def setup_test_db():
+validate	Lint (ruff)	2026-02-17T21:39:09.1733772Z    |                                   ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1734196Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1734641Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1734831Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1734920Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1735013Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1735267Z   --> tests/conftest.py:49:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1735469Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1735635Z 47 |             p1def setup_test_db():
+validate	Lint (ruff)	2026-02-17T21:39:09.1736063Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1736503Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1736695Z    | ^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1736897Z 50 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1737174Z 51 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1737406Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1737490Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1737665Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1738002Z   --> tests/conftest.py:50:5
+validate	Lint (ruff)	2026-02-17T21:39:09.1738205Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1738556Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1738992Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1739215Z 50 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1739581Z    |     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1739789Z 51 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1740227Z 52 |     # Replace the engine ino")
+validate	Lint (ruff)	2026-02-17T21:39:09.1740743Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1740911Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1741101Z invalid-syntax: f-string: unterminated string
+validate	Lint (ruff)	2026-02-17T21:39:09.1741440Z   --> tests/conftest.py:50:18
+validate	Lint (ruff)	2026-02-17T21:39:09.1741649Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1742018Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1742463Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1742697Z 50 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1742964Z    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1743212Z 51 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1743464Z 52 |     # Replace the engine ino")
+validate	Lint (ruff)	2026-02-17T21:39:09.1743676Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1743769Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1743894Z invalid-syntax: Expected FStringEnd, found newline
+validate	Lint (ruff)	2026-02-17T21:39:09.1744186Z   --> tests/conftest.py:50:45
+validate	Lint (ruff)	2026-02-17T21:39:09.1744387Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1744749Z 48 |         name="Provider One    # Use a tempor ba    fd, path = tempfile.mkstemp(suffix=".    api_key_required=False,
+validate	Lint (ruff)	2026-02-17T21:39:09.1745189Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1745425Z 50 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1745688Z    |                                             ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1745948Z 51 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1746194Z 52 |     # Replace the engine ino")
+validate	Lint (ruff)	2026-02-17T21:39:09.1746412Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1746497Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1746597Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1746849Z   --> tests/conftest.py:51:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1747052Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1747202Z 49 |             os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1747432Z 50 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1747695Z 51 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1747926Z    | ^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1748101Z 52 |     # Replace the engine ino")
+validate	Lint (ruff)	2026-02-17T21:39:09.1748322Z 53 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1748500Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1748583Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1748751Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1749232Z   --> tests/conftest.py:54:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1749433Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1749595Z 52 |     # Replace the engine ino")
+validate	Lint (ruff)	2026-02-17T21:39:09.1749809Z 53 |         ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1749998Z 54 |     db.engine = engine
+validate	Lint (ruff)	2026-02-17T21:39:09.1750188Z    | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1750341Z 55 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1750493Z 56 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1750898Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1750988Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1751088Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1751334Z   --> tests/conftest.py:57:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1751536Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1751691Z 56 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1751902Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1752128Z    | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1752300Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1752574Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1752889Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1752975Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1753186Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1753574Z   --> tests/conftest.py:57:19
+validate	Lint (ruff)	2026-02-17T21:39:09.1753780Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1753932Z 56 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1754141Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1754370Z    |                   ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1754567Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1754838Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1755149Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1755232Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1755369Z invalid-syntax: missing closing quote in string literal
+validate	Lint (ruff)	2026-02-17T21:39:09.1755845Z   --> tests/conftest.py:57:24
+validate	Lint (ruff)	2026-02-17T21:39:09.1756053Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1756203Z 56 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1756407Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1756637Z    |                        ^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1756863Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1757134Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1757448Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1757533Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1757624Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1757870Z   --> tests/conftest.py:59:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1758076Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1758236Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1758470Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1758734Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1759042Z    | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1759208Z 60 | =True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1759368Z 61 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1759539Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1759631Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1759832Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1760218Z   --> tests/conftest.py:59:8
+validate	Lint (ruff)	2026-02-17T21:39:09.1760417Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1760799Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1761093Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1761379Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1761692Z    |        ^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1761868Z 60 | =True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1762022Z 61 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1762186Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1762274Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1762491Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1762873Z   --> tests/conftest.py:59:28
+validate	Lint (ruff)	2026-02-17T21:39:09.1763082Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1763249Z 57 |     SQLMode       name="Provider T
+validate	Lint (ruff)	2026-02-17T21:39:09.1763488Z 58 |     # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1763766Z 59 | bas    SQLModel.metadex    SQLModel.metadata.create_all(engire
+validate	Lint (ruff)	2026-02-17T21:39:09.1764085Z    |                            ^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1764299Z 60 | =True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1764457Z 61 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1764622Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1764705Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1764802Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1765061Z   --> tests/conftest.py:62:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1765394Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1765544Z 60 | =True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1765697Z 61 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1765875Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1766062Z    | ^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1766244Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1766635Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1767050Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1767135Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1767235Z invalid-syntax: Expected an identifier
+validate	Lint (ruff)	2026-02-17T21:39:09.1767484Z   --> tests/conftest.py:62:21
+validate	Lint (ruff)	2026-02-17T21:39:09.1767701Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1767849Z 60 | =True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1768012Z 61 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1768180Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1768376Z    |                     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1768573Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1768963Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1769386Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1769471Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1769639Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1769982Z   --> tests/conftest.py:64:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1770179Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1770335Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1770664Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1771048Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1771451Z    | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1771733Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1771893Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1772089Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1772174Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1772381Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1772758Z   --> tests/conftest.py:64:21
+validate	Lint (ruff)	2026-02-17T21:39:09.1772963Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1773109Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1773316Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1773696Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1774113Z    |                     ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1774304Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1774460Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1774659Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1774742Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1774831Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1775079Z   --> tests/conftest.py:64:93
+validate	Lint (ruff)	2026-02-17T21:39:09.1775280Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1775431Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1775630Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1776014Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1776492Z    |                                                                                             ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1776789Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1776951Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1777147Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1777237Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1777330Z invalid-syntax: Expected an expression
+validate	Lint (ruff)	2026-02-17T21:39:09.1777581Z   --> tests/conftest.py:64:110
+validate	Lint (ruff)	2026-02-17T21:39:09.1777788Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1777937Z 62 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1778138Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1778518Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1779002Z    |                                                                                                              ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1779321Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1779474Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1779671Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1779756Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1779844Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1780096Z   --> tests/conftest.py:65:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1780300Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1780453Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1781085Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1781488Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1781643Z    | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1781804Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1782003Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1782092Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1782184Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1782432Z   --> tests/conftest.py:65:2
+validate	Lint (ruff)	2026-02-17T21:39:09.1782639Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1782794Z 63 |     # Teardown  #    try:
+validate	Lint (ruff)	2026-02-17T21:39:09.1783175Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1783578Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1783729Z    |  ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1783884Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1784082Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1784165Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1784257Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1784509Z   --> tests/conftest.py:66:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1784710Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1785033Z 64 |     mi              t1 = session.exec(select(Tag).where(Tag.name == "cl an_energy"))        except Exception:
+validate	Lint (ruff)	2026-02-17T21:39:09.1785434Z 65 | :
+validate	Lint (ruff)	2026-02-17T21:39:09.1785588Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1785788Z    | ^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1785951Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1786123Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1786343Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1786431Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1786524Z invalid-syntax: Expected an expression
+validate	Lint (ruff)	2026-02-17T21:39:09.1786769Z   --> tests/conftest.py:68:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1787089Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1787244Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1787437Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1787609Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1787830Z    | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1788044Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1788703Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1789227Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1789313Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1789406Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1789667Z   --> tests/conftest.py:68:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1789878Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1790028Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1790224Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1790391Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1790733Z    |               ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1790977Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1791605Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1792104Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1792194Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1792290Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1792547Z   --> tests/conftest.py:68:22
+validate	Lint (ruff)	2026-02-17T21:39:09.1792752Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1792910Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1793101Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1793276Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1793503Z    |                      ^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1793773Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1794371Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1794874Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1794956Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1795095Z invalid-syntax: missing closing quote in string literal
+validate	Lint (ruff)	2026-02-17T21:39:09.1795404Z   --> tests/conftest.py:68:31
+validate	Lint (ruff)	2026-02-17T21:39:09.1795612Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1795764Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1795962Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1796130Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1796365Z    |                               ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1796625Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1797359Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1797854Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1797936Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1798031Z invalid-syntax: Expected `)`, found newline
+validate	Lint (ruff)	2026-02-17T21:39:09.1798296Z   --> tests/conftest.py:68:33
+validate	Lint (ruff)	2026-02-17T21:39:09.1798496Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1798651Z 66 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1798842Z 67 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1799014Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1799252Z    |                                 ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1799517Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1800123Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1800719Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1800812Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1800982Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1801333Z   --> tests/conftest.py:70:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1801536Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1801705Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1801979Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1802583Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1803086Z    | ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1803246Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1803649Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1804224Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1804309Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1804409Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1804666Z   --> tests/conftest.py:70:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1804875Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1805041Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1805332Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1805930Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1806441Z    |               ^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1806639Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1807044Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1807488Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1807572Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1807673Z invalid-syntax: Expected `,`, found `==`
+validate	Lint (ruff)	2026-02-17T21:39:09.1807932Z   --> tests/conftest.py:70:25
+validate	Lint (ruff)	2026-02-17T21:39:09.1808136Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1825259Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1825808Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1826511Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1827078Z    |                         ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1827302Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1827732Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1828182Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1828278Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1828494Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1828891Z   --> tests/conftest.py:70:28
+validate	Lint (ruff)	2026-02-17T21:39:09.1829108Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1829290Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1829589Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1830218Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1831064Z    |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1831568Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1831976Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1832436Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1832526Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1832738Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1833124Z   --> tests/conftest.py:70:97
+validate	Lint (ruff)	2026-02-17T21:39:09.1833337Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1833511Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1833817Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1834452Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1835044Z    |                                                                                                 ^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1835359Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1835773Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1836225Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1836315Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1836521Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1836911Z   --> tests/conftest.py:70:107
+validate	Lint (ruff)	2026-02-17T21:39:09.1837122Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1837300Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1837603Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1838351Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1838958Z    |                                                                                                           ^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1839287Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1839695Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1840147Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1840236Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1840440Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1841132Z   --> tests/conftest.py:70:120
+validate	Lint (ruff)	2026-02-17T21:39:09.1841348Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1841527Z 68 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1841818Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1842445Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1843074Z    |                                                                                                                        ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1843405Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1843813Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1844258Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1844351Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1844557Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1844936Z   --> tests/conftest.py:70:138
+validate	Lint (ruff)	2026-02-17T21:39:09.1845152Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1845317Z 68 | …
+validate	Lint (ruff)	2026-02-17T21:39:09.1845475Z 69 | …
+validate	Lint (ruff)	2026-02-17T21:39:09.1845873Z 70 | …       t2 = Tag(name="no_tobacco", category="restri            select(Providon        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1846306Z    |                                                                 ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1846593Z 71 | …
+validate	Lint (ruff)	2026-02-17T21:39:09.1846864Z 72 | …e(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1847158Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1847243Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1847338Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1847606Z   --> tests/conftest.py:71:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1847813Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1848019Z 69 |     # Insert sosi    with Session(db.engine) as session:
+validate	Lint (ruff)	2026-02-17T21:39:09.1848788Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1849306Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1849493Z    | ^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1849875Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1850363Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1850777Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1850877Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1851087Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1851484Z   --> tests/conftest.py:72:19
+validate	Lint (ruff)	2026-02-17T21:39:09.1851701Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1852205Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1852730Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1853155Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1853614Z    |                   ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1853845Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1854136Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1854371Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1854468Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1854569Z invalid-syntax: Expected `else`, found `)`
+validate	Lint (ruff)	2026-02-17T21:39:09.1854832Z   --> tests/conftest.py:72:69
+validate	Lint (ruff)	2026-02-17T21:39:09.1855167Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1855652Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1856172Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1856577Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1857066Z    |                                                                     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1857370Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1857637Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1857871Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1857957Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1858051Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1858297Z   --> tests/conftest.py:72:70
+validate	Lint (ruff)	2026-02-17T21:39:09.1858502Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1858979Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1859502Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1859894Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1860379Z    |                                                                      ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1860798Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1861070Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1861301Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1861383Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1861584Z invalid-syntax: Simple statements must be separated by newlines or semicolons
+validate	Lint (ruff)	2026-02-17T21:39:09.1861969Z   --> tests/conftest.py:72:116
+validate	Lint (ruff)	2026-02-17T21:39:09.1862177Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1862664Z 70 |   import tAdd providame == "no_to  import tAdd providers if thfrom sqlm          t2 = Tag(name="no_tobacco", category="restri         …
+validate	Lint (ruff)	2026-02-17T21:39:09.1863180Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1863575Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1864125Z    |                                                                                                                    ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1864480Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1864754Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1865116Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1865207Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1865383Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1865733Z   --> tests/conftest.py:73:5
+validate	Lint (ruff)	2026-02-17T21:39:09.1865935Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1866088Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1866490Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1866970Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1867216Z    |     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1867400Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1867717Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1868034Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1868120Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1868235Z invalid-syntax: f-string: unterminated string
+validate	Lint (ruff)	2026-02-17T21:39:09.1868511Z   --> tests/conftest.py:73:18
+validate	Lint (ruff)	2026-02-17T21:39:09.1868723Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1868883Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1869285Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1869754Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1870018Z    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1870271Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1870683Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1870990Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1871074Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1871310Z invalid-syntax: Expected FStringEnd, found newline
+validate	Lint (ruff)	2026-02-17T21:39:09.1871602Z   --> tests/conftest.py:73:45
+validate	Lint (ruff)	2026-02-17T21:39:09.1871807Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1871963Z 71 |         if not p1:
+validate	Lint (ruff)	2026-02-17T21:39:09.1872355Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1872830Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1873102Z    |                                             ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1873355Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1873670Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1873970Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1874058Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1874156Z invalid-syntax: Unexpected indentation
+validate	Lint (ruff)	2026-02-17T21:39:09.1874409Z   --> tests/conftest.py:74:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1874617Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1874981Z 72 |             p1def set1 = sessio        if not                p1defnt).where(Instrument.ticker == "ABC")            os.close(fd)
+validate	Lint (ruff)	2026-02-17T21:39:09.1875454Z 73 |     test_url = f"sqlite:///2     test_url = 
+validate	Lint (ruff)	2026-02-17T21:39:09.1875726Z 74 |             select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1875955Z    | ^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1876204Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1876570Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1876853Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1876936Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1877034Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1877285Z   --> tests/conftest.py:77:5
+validate	Lint (ruff)	2026-02-17T21:39:09.1877492Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1877713Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1878078Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1878367Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1878585Z    |     ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1878810Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1879111Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1879302Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1879384Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1879481Z invalid-syntax: Expected a parameter name
+validate	Lint (ruff)	2026-02-17T21:39:09.1879741Z   --> tests/conftest.py:77:5
+validate	Lint (ruff)	2026-02-17T21:39:09.1879937Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1880157Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1880918Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1881288Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1881512Z    |     ^^^^^^^^^^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1881781Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1882081Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1882273Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1882361Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1882464Z invalid-syntax: Expected `else`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1882730Z   --> tests/conftest.py:77:28
+validate	Lint (ruff)	2026-02-17T21:39:09.1882940Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1883169Z 75 |     # Res    test_url = f"sqlite i            select(Provider).where(P
+validate	Lint (ruff)	2026-02-17T21:39:09.1883540Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1883835Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1884055Z    |                            ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1884325Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1884624Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1884815Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1884903Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1884995Z invalid-syntax: Expected `,`, found `=`
+validate	Lint (ruff)	2026-02-17T21:39:09.1885256Z   --> tests/conftest.py:78:10
+validate	Lint (ruff)	2026-02-17T21:39:09.1885459Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1885665Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1885955Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1886252Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1886714Z    |          ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1886900Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1887098Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1887285Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1887367Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1887540Z invalid-syntax: Positional argument cannot follow keyword argument
+validate	Lint (ruff)	2026-02-17T21:39:09.1887876Z   --> tests/conftest.py:78:12
+validate	Lint (ruff)	2026-02-17T21:39:09.1888078Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1888292Z 76 |       # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1888593Z 77 |       d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1888873Z 78 |       ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1889160Z    |  ____________^
+validate	Lint (ruff)	2026-02-17T21:39:09.1889340Z 79 | | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1889542Z 80 | |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1889736Z 81 | |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1889905Z    | |_____________^
+validate	Lint (ruff)	2026-02-17T21:39:09.1890078Z 82 |               session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1890300Z 83 |   ere(User.email == "admin@example.com")
+validate	Lint (ruff)	2026-02-17T21:39:09.1890660Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1890748Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1890843Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1891094Z   --> tests/conftest.py:78:28
+validate	Lint (ruff)	2026-02-17T21:39:09.1891290Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1891492Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1891775Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1892055Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1892346Z    |                            ^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1892568Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1892762Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1892944Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1893035Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1893164Z invalid-syntax: missing closing quote in string literal
+validate	Lint (ruff)	2026-02-17T21:39:09.1893461Z   --> tests/conftest.py:78:42
+validate	Lint (ruff)	2026-02-17T21:39:09.1893662Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1893864Z 76 |     # ru    # Replace the engine cker == "XYZ        ).first()
+validate	Lint (ruff)	2026-02-17T21:39:09.1894152Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1894433Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1894740Z    |                                          ^^^^^^^^^^^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1894999Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1895189Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1895372Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1895573Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1895664Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1895915Z   --> tests/conftest.py:79:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1896112Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1896261Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1896536Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1896820Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1897002Z    | ^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1897154Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1897341Z 81 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1897502Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1897594Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1897682Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1897927Z   --> tests/conftest.py:79:8
+validate	Lint (ruff)	2026-02-17T21:39:09.1898126Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1898285Z 77 |     d      if    db.engine =   
+validate	Lint (ruff)	2026-02-17T21:39:09.1898553Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1898841Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1899023Z    |        ^^^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1899211Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1899391Z 81 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1899558Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1899641Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1899728Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1899972Z   --> tests/conftest.py:80:9
+validate	Lint (ruff)	2026-02-17T21:39:09.1900167Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1900369Z 78 |     ins2 = Instrument(t    SQLMode       "X    # Create tables
+validate	Lint (ruff)	2026-02-17T21:39:09.1900761Z 79 | bas    SQLModinbas 
+validate	Lint (ruff)	2026-02-17T21:39:09.1900947Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1901133Z    |         ^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1901407Z 81 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1901573Z 82 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1901753Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1901842Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1901931Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1902173Z   --> tests/conftest.py:82:13
+validate	Lint (ruff)	2026-02-17T21:39:09.1902375Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1902524Z 80 |         admin ==True,
+validate	Lint (ruff)	2026-02-17T21:39:09.1902704Z 81 |             )
+validate	Lint (ruff)	2026-02-17T21:39:09.1902884Z 82 |             session.
+validate	Lint (ruff)	2026-02-17T21:39:09.1903068Z    |             ^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1903276Z 83 | ere(User.email == "admin@example.com")
+validate	Lint (ruff)	2026-02-17T21:39:09.1903544Z 84 |        # Teardown           mi              t1    :
+validate	Lint (ruff)	2026-02-17T21:39:09.1903791Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1903874Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1903961Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1904207Z   --> tests/conftest.py:85:13
+validate	Lint (ruff)	2026-02-17T21:39:09.1904406Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1904573Z 83 | ere(User.email == "admin@example.com")
+validate	Lint (ruff)	2026-02-17T21:39:09.1904843Z 84 |        # Teardown           mi              t1    :
+validate	Lint (ruff)	2026-02-17T21:39:09.1905094Z 85 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1905295Z    |             ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1905457Z 86 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1905627Z 87 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1905848Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1905934Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1906024Z invalid-syntax: Expected an expression
+validate	Lint (ruff)	2026-02-17T21:39:09.1906275Z   --> tests/conftest.py:87:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1906474Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1906630Z 85 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1906822Z 86 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1906986Z 87 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1907199Z    | ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1907380Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1907617Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1907703Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1907794Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1908039Z   --> tests/conftest.py:87:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1908242Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1908397Z 85 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1908585Z 86 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1908747Z 87 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1908970Z    |               ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1909183Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1909416Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1909500Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1909588Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1909948Z   --> tests/conftest.py:87:22
+validate	Lint (ruff)	2026-02-17T21:39:09.1910145Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1910292Z 85 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1910484Z 86 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1910747Z 87 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1910970Z    |                      ^^^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1911205Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1911434Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1911517Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1911652Z invalid-syntax: missing closing quote in string literal
+validate	Lint (ruff)	2026-02-17T21:39:09.1911949Z   --> tests/conftest.py:87:31
+validate	Lint (ruff)	2026-02-17T21:39:09.1912156Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1912303Z 85 |             t1 = Tag(name=
+validate	Lint (ruff)	2026-02-17T21:39:09.1912497Z 86 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1912669Z 87 | @pytest.fixtu catdef seed_datr")
+validate	Lint (ruff)	2026-02-17T21:39:09.1912892Z    |                               ^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1913125Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1913356Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1913436Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1913533Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1913774Z   --> tests/conftest.py:90:15
+validate	Lint (ruff)	2026-02-17T21:39:09.1913970Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1914140Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1914379Z 89 |      
+validate	Lint (ruff)	2026-02-17T21:39:09.1914544Z 90 | @pytest.fixtu catdef see
+validate	Lint (ruff)	2026-02-17T21:39:09.1914746Z    |               ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1914958Z 91 |       # Insert sosi    with Sessi.add(admin)
+validate	Lint (ruff)	2026-02-17T21:39:09.1915192Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1915274Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1915368Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1915730Z   --> tests/conftest.py:90:22
+validate	Lint (ruff)	2026-02-17T21:39:09.1915925Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1916094Z 88 |     # Insert sosi    with Session(db.engin,
+validate	Lint (ruff)	2026-02-17T21:39:09.1916368Z 89 |      
+validate	Lint (ruff)	2026-02-17T21:39:09.1916530Z 90 | @pytest.fixtu catdef see
+validate	Lint (ruff)	2026-02-17T21:39:09.1916730Z    |                      ^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1916950Z 91 |       # Insert sosi    with Sessi.add(admin)
+validate	Lint (ruff)	2026-02-17T21:39:09.1917188Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1917276Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1917368Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-17T21:39:09.1917609Z   --> tests/conftest.py:93:9
+validate	Lint (ruff)	2026-02-17T21:39:09.1917811Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1918004Z 91 |       # Insert sosi    with Sessi.add(admin)
+validate	Lint (ruff)	2026-02-17T21:39:09.1918242Z 92 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1918392Z 93 |         session.commit()
+validate	Lint (ruff)	2026-02-17T21:39:09.1918586Z    |         ^^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1918755Z 94 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1918902Z 95 |     return True
+validate	Lint (ruff)	2026-02-17T21:39:09.1919074Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1919155Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1919254Z invalid-syntax: Expected `)`, found newline
+validate	Lint (ruff)	2026-02-17T21:39:09.1919515Z   --> tests/conftest.py:93:25
+validate	Lint (ruff)	2026-02-17T21:39:09.1919707Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1919882Z 91 |       # Insert sosi    with Sessi.add(admin)
+validate	Lint (ruff)	2026-02-17T21:39:09.1920117Z 92 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1920269Z 93 |         session.commit()
+validate	Lint (ruff)	2026-02-17T21:39:09.1920467Z    |                         ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1920931Z 94 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1921094Z 95 |     return True
+validate	Lint (ruff)	2026-02-17T21:39:09.1921269Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1921351Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1921524Z invalid-syntax: unindent does not match any outer indentation level
+validate	Lint (ruff)	2026-02-17T21:39:09.1921862Z   --> tests/conftest.py:95:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1922057Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1922211Z 93 |         session.commit()
+validate	Lint (ruff)	2026-02-17T21:39:09.1922405Z 94 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1922549Z 95 |     return True
+validate	Lint (ruff)	2026-02-17T21:39:09.1922717Z    | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1922863Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1922949Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1923036Z invalid-syntax: Expected a statement
+validate	Lint (ruff)	2026-02-17T21:39:09.1923283Z   --> tests/conftest.py:95:1
+validate	Lint (ruff)	2026-02-17T21:39:09.1923477Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1923633Z 93 |         session.commit()
+validate	Lint (ruff)	2026-02-17T21:39:09.1923824Z 94 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1923970Z 95 |     return True
+validate	Lint (ruff)	2026-02-17T21:39:09.1924133Z    | ^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1924280Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1924360Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1924461Z invalid-syntax: Expected `)`, found `return`
+validate	Lint (ruff)	2026-02-17T21:39:09.1924853Z   --> tests/conftest.py:95:5
+validate	Lint (ruff)	2026-02-17T21:39:09.1925043Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1925199Z 93 |         session.commit()
+validate	Lint (ruff)	2026-02-17T21:39:09.1925389Z 94 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1925532Z 95 |     return True
+validate	Lint (ruff)	2026-02-17T21:39:09.1925699Z    |     ^^^^^^
+validate	Lint (ruff)	2026-02-17T21:39:09.1925854Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1925937Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1926026Z E741 Ambiguous variable name: `l`
+validate	Lint (ruff)	2026-02-17T21:39:09.1926265Z   --> tests/test_api_endpoints.py:36:9
+validate	Lint (ruff)	2026-02-17T21:39:09.1926491Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1926659Z 34 |         assert r.status_code in (201, 400)
+validate	Lint (ruff)	2026-02-17T21:39:09.1926893Z 35 |
+validate	Lint (ruff)	2026-02-17T21:39:09.1927207Z 36 |         l = await client.get_async_httpx_client().post("/api/v1/auth/login", json=reg_payload)
+validate	Lint (ruff)	2026-02-17T21:39:09.1927602Z    |         ^
+validate	Lint (ruff)	2026-02-17T21:39:09.1927781Z 37 |         assert l.status_code == 200
+validate	Lint (ruff)	2026-02-17T21:39:09.1928015Z 38 |         body = l.json()
+validate	Lint (ruff)	2026-02-17T21:39:09.1928206Z    |
+validate	Lint (ruff)	2026-02-17T21:39:09.1928286Z 
+validate	Lint (ruff)	2026-02-17T21:39:09.1928353Z Found 101 errors.
+validate	Lint (ruff)	2026-02-17T21:39:09.1928572Z [*] 2 fixable with the `--fix` option.
+validate	Lint (ruff)	2026-02-17T21:39:09.1938636Z ##[error]Process completed with exit code 1.
+validate	Post Checkout	﻿2026-02-17T21:39:09.2043332Z Post job cleanup.
+validate	Post Checkout	2026-02-17T21:39:09.2993616Z [command]/usr/bin/git version
+validate	Post Checkout	2026-02-17T21:39:09.3029667Z git version 2.52.0
+validate	Post Checkout	2026-02-17T21:39:09.3076450Z Temporarily overriding HOME='/home/runner/work/_temp/263e6bcd-c5b2-4fc5-b8af-7015d33ee9ab' before making global git config changes
+validate	Post Checkout	2026-02-17T21:39:09.3077830Z Adding repository directory to the temporary git global config as a safe directory
+validate	Post Checkout	2026-02-17T21:39:09.3090892Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Post Checkout	2026-02-17T21:39:09.3125100Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Post Checkout	2026-02-17T21:39:09.3159005Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Post Checkout	2026-02-17T21:39:09.3399362Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Post Checkout	2026-02-17T21:39:09.3421730Z http.https://github.com/.extraheader
+validate	Post Checkout	2026-02-17T21:39:09.3433952Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+validate	Post Checkout	2026-02-17T21:39:09.3466032Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Post Checkout	2026-02-17T21:39:09.3698371Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Post Checkout	2026-02-17T21:39:09.3729071Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Complete job	﻿2026-02-17T21:39:09.4064865Z Cleaning up orphan processes

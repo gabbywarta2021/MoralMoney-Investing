@@ -1,0 +1,676 @@
+validate	Set up job	﻿2026-02-18T01:05:17.7370947Z Current runner version: '2.331.0'
+validate	Set up job	2026-02-18T01:05:17.7397276Z ##[group]Runner Image Provisioner
+validate	Set up job	2026-02-18T01:05:17.7398108Z Hosted Compute Agent
+validate	Set up job	2026-02-18T01:05:17.7398771Z Version: 20260123.484
+validate	Set up job	2026-02-18T01:05:17.7399407Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+validate	Set up job	2026-02-18T01:05:17.7400119Z Build Date: 2026-01-23T19:41:17Z
+validate	Set up job	2026-02-18T01:05:17.7400875Z Worker ID: {6e69b6d0-567f-436c-bf62-bb85f770ab70}
+validate	Set up job	2026-02-18T01:05:17.7401544Z Azure Region: westcentralus
+validate	Set up job	2026-02-18T01:05:17.7402151Z ##[endgroup]
+validate	Set up job	2026-02-18T01:05:17.7403756Z ##[group]Operating System
+validate	Set up job	2026-02-18T01:05:17.7404405Z Ubuntu
+validate	Set up job	2026-02-18T01:05:17.7404952Z 24.04.3
+validate	Set up job	2026-02-18T01:05:17.7405471Z LTS
+validate	Set up job	2026-02-18T01:05:17.7405988Z ##[endgroup]
+validate	Set up job	2026-02-18T01:05:17.7406476Z ##[group]Runner Image
+validate	Set up job	2026-02-18T01:05:17.7407074Z Image: ubuntu-24.04
+validate	Set up job	2026-02-18T01:05:17.7407588Z Version: 20260209.23.1
+validate	Set up job	2026-02-18T01:05:17.7408704Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260209.23/images/ubuntu/Ubuntu2404-Readme.md
+validate	Set up job	2026-02-18T01:05:17.7410383Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260209.23
+validate	Set up job	2026-02-18T01:05:17.7411310Z ##[endgroup]
+validate	Set up job	2026-02-18T01:05:17.7412402Z ##[group]GITHUB_TOKEN Permissions
+validate	Set up job	2026-02-18T01:05:17.7414685Z Contents: read
+validate	Set up job	2026-02-18T01:05:17.7415255Z Metadata: read
+validate	Set up job	2026-02-18T01:05:17.7415857Z Packages: read
+validate	Set up job	2026-02-18T01:05:17.7416393Z ##[endgroup]
+validate	Set up job	2026-02-18T01:05:17.7418342Z Secret source: Actions
+validate	Set up job	2026-02-18T01:05:17.7419112Z Prepare workflow directory
+validate	Set up job	2026-02-18T01:05:17.7755800Z Prepare all required actions
+validate	Set up job	2026-02-18T01:05:17.7794767Z Getting action download info
+validate	Set up job	2026-02-18T01:05:18.1354772Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+validate	Set up job	2026-02-18T01:05:18.2643483Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+validate	Set up job	2026-02-18T01:05:18.5093088Z Complete job name: validate
+validate	Checkout	﻿2026-02-18T01:05:18.5775192Z ##[group]Run actions/checkout@v4
+validate	Checkout	2026-02-18T01:05:18.5775978Z with:
+validate	Checkout	2026-02-18T01:05:18.5776454Z   repository: gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:18.5777193Z   token: ***
+validate	Checkout	2026-02-18T01:05:18.5777584Z   ssh-strict: true
+validate	Checkout	2026-02-18T01:05:18.5777988Z   ssh-user: git
+validate	Checkout	2026-02-18T01:05:18.5778391Z   persist-credentials: true
+validate	Checkout	2026-02-18T01:05:18.5778828Z   clean: true
+validate	Checkout	2026-02-18T01:05:18.5779235Z   sparse-checkout-cone-mode: true
+validate	Checkout	2026-02-18T01:05:18.5779700Z   fetch-depth: 1
+validate	Checkout	2026-02-18T01:05:18.5780089Z   fetch-tags: false
+validate	Checkout	2026-02-18T01:05:18.5780475Z   show-progress: true
+validate	Checkout	2026-02-18T01:05:18.5780871Z   lfs: false
+validate	Checkout	2026-02-18T01:05:18.5781226Z   submodules: false
+validate	Checkout	2026-02-18T01:05:18.5781629Z   set-safe-directory: true
+validate	Checkout	2026-02-18T01:05:18.5782263Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:18.6878795Z Syncing repository: gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:18.6880652Z ##[group]Getting Git version info
+validate	Checkout	2026-02-18T01:05:18.6881455Z Working directory is '/home/runner/work/MoralMoney-Investing/MoralMoney-Investing'
+validate	Checkout	2026-02-18T01:05:18.6882909Z [command]/usr/bin/git version
+validate	Checkout	2026-02-18T01:05:18.6894285Z git version 2.52.0
+validate	Checkout	2026-02-18T01:05:18.6919170Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:18.6935669Z Temporarily overriding HOME='/home/runner/work/_temp/339f9b15-dff5-4e8b-a18c-6481f1fbd987' before making global git config changes
+validate	Checkout	2026-02-18T01:05:18.6937781Z Adding repository directory to the temporary git global config as a safe directory
+validate	Checkout	2026-02-18T01:05:18.6940894Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:18.6984583Z Deleting the contents of '/home/runner/work/MoralMoney-Investing/MoralMoney-Investing'
+validate	Checkout	2026-02-18T01:05:18.6988286Z ##[group]Initializing the repository
+validate	Checkout	2026-02-18T01:05:18.6992652Z [command]/usr/bin/git init /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:18.7084386Z hint: Using 'master' as the name for the initial branch. This default branch name
+validate	Checkout	2026-02-18T01:05:18.7085782Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+validate	Checkout	2026-02-18T01:05:18.7086959Z hint: to use in all of your new repositories, which will suppress this warning,
+validate	Checkout	2026-02-18T01:05:18.7087978Z hint: call:
+validate	Checkout	2026-02-18T01:05:18.7088501Z hint:
+validate	Checkout	2026-02-18T01:05:18.7089371Z hint: 	git config --global init.defaultBranch <name>
+validate	Checkout	2026-02-18T01:05:18.7090255Z hint:
+validate	Checkout	2026-02-18T01:05:18.7091071Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+validate	Checkout	2026-02-18T01:05:18.7092395Z hint: 'development'. The just-created branch can be renamed via this command:
+validate	Checkout	2026-02-18T01:05:18.7093735Z hint:
+validate	Checkout	2026-02-18T01:05:18.7094312Z hint: 	git branch -m <name>
+validate	Checkout	2026-02-18T01:05:18.7094976Z hint:
+validate	Checkout	2026-02-18T01:05:18.7095823Z hint: Disable this message with "git config set advice.defaultBranchName false"
+validate	Checkout	2026-02-18T01:05:18.7097530Z Initialized empty Git repository in /home/runner/work/MoralMoney-Investing/MoralMoney-Investing/.git/
+validate	Checkout	2026-02-18T01:05:18.7101876Z [command]/usr/bin/git remote add origin https://github.com/gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:18.7141334Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:18.7145978Z ##[group]Disabling automatic garbage collection
+validate	Checkout	2026-02-18T01:05:18.7146931Z [command]/usr/bin/git config --local gc.auto 0
+validate	Checkout	2026-02-18T01:05:18.7180771Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:18.7181818Z ##[group]Setting up auth
+validate	Checkout	2026-02-18T01:05:18.7188215Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Checkout	2026-02-18T01:05:18.7223499Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Checkout	2026-02-18T01:05:18.7580843Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Checkout	2026-02-18T01:05:18.7614444Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Checkout	2026-02-18T01:05:18.7885003Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Checkout	2026-02-18T01:05:18.7930848Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Checkout	2026-02-18T01:05:18.8215683Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+validate	Checkout	2026-02-18T01:05:18.8261050Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:18.8262124Z ##[group]Fetching the repository
+validate	Checkout	2026-02-18T01:05:18.8270891Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4332346512c08606b508dbe4c0c74a39b43aad58:refs/remotes/pull/2/merge
+validate	Checkout	2026-02-18T01:05:19.1955614Z From https://github.com/gabbywarta2021/MoralMoney-Investing
+validate	Checkout	2026-02-18T01:05:19.1956807Z  * [new ref]         4332346512c08606b508dbe4c0c74a39b43aad58 -> pull/2/merge
+validate	Checkout	2026-02-18T01:05:19.1989911Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:19.1990757Z ##[group]Determining the checkout info
+validate	Checkout	2026-02-18T01:05:19.1992074Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:19.1997399Z [command]/usr/bin/git sparse-checkout disable
+validate	Checkout	2026-02-18T01:05:19.2041557Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+validate	Checkout	2026-02-18T01:05:19.2070103Z ##[group]Checking out the ref
+validate	Checkout	2026-02-18T01:05:19.2073899Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/2/merge
+validate	Checkout	2026-02-18T01:05:19.2137513Z Note: switching to 'refs/remotes/pull/2/merge'.
+validate	Checkout	2026-02-18T01:05:19.2138202Z 
+validate	Checkout	2026-02-18T01:05:19.2138598Z You are in 'detached HEAD' state. You can look around, make experimental
+validate	Checkout	2026-02-18T01:05:19.2139456Z changes and commit them, and you can discard any commits you make in this
+validate	Checkout	2026-02-18T01:05:19.2140274Z state without impacting any branches by switching back to a branch.
+validate	Checkout	2026-02-18T01:05:19.2140753Z 
+validate	Checkout	2026-02-18T01:05:19.2141077Z If you want to create a new branch to retain commits you create, you may
+validate	Checkout	2026-02-18T01:05:19.2141835Z do so (now or later) by using -c with the switch command. Example:
+validate	Checkout	2026-02-18T01:05:19.2142297Z 
+validate	Checkout	2026-02-18T01:05:19.2143153Z   git switch -c <new-branch-name>
+validate	Checkout	2026-02-18T01:05:19.2143667Z 
+validate	Checkout	2026-02-18T01:05:19.2143947Z Or undo this operation with:
+validate	Checkout	2026-02-18T01:05:19.2144401Z 
+validate	Checkout	2026-02-18T01:05:19.2144666Z   git switch -
+validate	Checkout	2026-02-18T01:05:19.2145002Z 
+validate	Checkout	2026-02-18T01:05:19.2145566Z Turn off this advice by setting config variable advice.detachedHead to false
+validate	Checkout	2026-02-18T01:05:19.2146413Z 
+validate	Checkout	2026-02-18T01:05:19.2147350Z HEAD is now at 4332346 Merge f71ab2ae8988344de4dedfa72117a94efe74a0a0 into 41042a4e77096bb6586fa2db1514e7afb2bc45e5
+validate	Checkout	2026-02-18T01:05:19.2150047Z ##[endgroup]
+validate	Checkout	2026-02-18T01:05:19.2187730Z [command]/usr/bin/git log -1 --format=%H
+validate	Checkout	2026-02-18T01:05:19.2213211Z 4332346512c08606b508dbe4c0c74a39b43aad58
+validate	Set up Python	﻿2026-02-18T01:05:19.2463764Z ##[group]Run actions/setup-python@v4
+validate	Set up Python	2026-02-18T01:05:19.2464282Z with:
+validate	Set up Python	2026-02-18T01:05:19.2464633Z   python-version: 3.11
+validate	Set up Python	2026-02-18T01:05:19.2465026Z   check-latest: false
+validate	Set up Python	2026-02-18T01:05:19.2465560Z   token: ***
+validate	Set up Python	2026-02-18T01:05:19.2465918Z   update-environment: true
+validate	Set up Python	2026-02-18T01:05:19.2466365Z   allow-prereleases: false
+validate	Set up Python	2026-02-18T01:05:19.2466770Z ##[endgroup]
+validate	Set up Python	2026-02-18T01:05:19.4209339Z ##[group]Installed versions
+validate	Set up Python	2026-02-18T01:05:19.4318915Z Successfully set up CPython (3.11.14)
+validate	Set up Python	2026-02-18T01:05:19.4320372Z ##[endgroup]
+validate	Install tooling	﻿2026-02-18T01:05:19.4465825Z ##[group]Run python -m pip install --upgrade pip
+validate	Install tooling	2026-02-18T01:05:19.4466844Z [36;1mpython -m pip install --upgrade pip[0m
+validate	Install tooling	2026-02-18T01:05:19.4467977Z [36;1mif [ -f requirements.txt ]; then pip install -r requirements.txt; fi[0m
+validate	Install tooling	2026-02-18T01:05:19.4469180Z [36;1mpip install openapi-spec-validator ruff[0m
+validate	Install tooling	2026-02-18T01:05:19.4537030Z shell: /usr/bin/bash -e {0}
+validate	Install tooling	2026-02-18T01:05:19.4537683Z env:
+validate	Install tooling	2026-02-18T01:05:19.4538291Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-18T01:05:19.4539597Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib/pkgconfig
+validate	Install tooling	2026-02-18T01:05:19.4540884Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-18T01:05:19.4542010Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-18T01:05:19.4543439Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Install tooling	2026-02-18T01:05:19.4544674Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib
+validate	Install tooling	2026-02-18T01:05:19.4545692Z ##[endgroup]
+validate	Install tooling	2026-02-18T01:05:20.1276793Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (26.0.1)
+validate	Install tooling	2026-02-18T01:05:20.9193345Z Collecting fastapi (from -r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:21.0203187Z   Downloading fastapi-0.129.0-py3-none-any.whl.metadata (30 kB)
+validate	Install tooling	2026-02-18T01:05:21.0681649Z Collecting sqlmodel (from -r requirements.txt (line 3))
+validate	Install tooling	2026-02-18T01:05:21.0990831Z   Downloading sqlmodel-0.0.34-py3-none-any.whl.metadata (10 kB)
+validate	Install tooling	2026-02-18T01:05:21.1342241Z Collecting httpx (from -r requirements.txt (line 4))
+validate	Install tooling	2026-02-18T01:05:21.1537605Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+validate	Install tooling	2026-02-18T01:05:21.1855114Z Collecting openapi-spec-validator (from -r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:21.2062303Z   Downloading openapi_spec_validator-0.7.2-py3-none-any.whl.metadata (5.7 kB)
+validate	Install tooling	2026-02-18T01:05:21.2571354Z Collecting openapi-python-client (from -r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:21.2792260Z   Downloading openapi_python_client-0.28.2-py3-none-any.whl.metadata (11 kB)
+validate	Install tooling	2026-02-18T01:05:21.3108149Z Collecting python-dateutil (from -r requirements.txt (line 7))
+validate	Install tooling	2026-02-18T01:05:21.3308110Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-18T01:05:21.3777360Z Collecting pytest (from -r requirements.txt (line 12))
+validate	Install tooling	2026-02-18T01:05:21.3976104Z   Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+validate	Install tooling	2026-02-18T01:05:21.4343936Z Collecting pytest-asyncio (from -r requirements.txt (line 13))
+validate	Install tooling	2026-02-18T01:05:21.4537234Z   Downloading pytest_asyncio-1.3.0-py3-none-any.whl.metadata (4.1 kB)
+validate	Install tooling	2026-02-18T01:05:21.4866405Z Collecting anyio (from -r requirements.txt (line 14))
+validate	Install tooling	2026-02-18T01:05:21.5062780Z   Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+validate	Install tooling	2026-02-18T01:05:21.5456266Z Collecting uvicorn[standard] (from -r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:21.5650770Z   Downloading uvicorn-0.41.0-py3-none-any.whl.metadata (6.7 kB)
+validate	Install tooling	2026-02-18T01:05:21.5936351Z Collecting passlib[bcrypt] (from -r requirements.txt (line 8))
+validate	Install tooling	2026-02-18T01:05:21.6132757Z   Downloading passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+validate	Install tooling	2026-02-18T01:05:21.6404051Z Collecting python-jose[cryptography] (from -r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:21.6600009Z   Downloading python_jose-3.5.0-py2.py3-none-any.whl.metadata (5.5 kB)
+validate	Install tooling	2026-02-18T01:05:21.7026780Z Collecting starlette<1.0.0,>=0.40.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:21.7234879Z   Downloading starlette-0.52.1-py3-none-any.whl.metadata (6.3 kB)
+validate	Install tooling	2026-02-18T01:05:21.8463402Z Collecting pydantic>=2.7.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:21.8661043Z   Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+validate	Install tooling	2026-02-18T01:05:21.9179270Z Collecting typing-extensions>=4.8.0 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:21.9372846Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+validate	Install tooling	2026-02-18T01:05:21.9628598Z Collecting typing-inspection>=0.4.2 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:21.9822741Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-18T01:05:22.0074299Z Collecting annotated-doc>=0.0.2 (from fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:22.0269363Z   Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+validate	Install tooling	2026-02-18T01:05:22.0624604Z Collecting idna>=2.8 (from anyio->-r requirements.txt (line 14))
+validate	Install tooling	2026-02-18T01:05:22.0825306Z   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-18T01:05:22.1151052Z Collecting click>=7.0 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.1351960Z   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-18T01:05:22.1623847Z Collecting h11>=0.8 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.1818222Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+validate	Install tooling	2026-02-18T01:05:22.2232701Z Collecting httptools>=0.6.3 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.2430445Z   Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+validate	Install tooling	2026-02-18T01:05:22.2728316Z Collecting python-dotenv>=0.13 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.2924351Z   Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+validate	Install tooling	2026-02-18T01:05:22.3411542Z Collecting pyyaml>=5.1 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.3611572Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+validate	Install tooling	2026-02-18T01:05:22.4082197Z Collecting uvloop>=0.15.1 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.4280566Z   Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-18T01:05:22.5048458Z Collecting watchfiles>=0.20 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.5257818Z   Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-18T01:05:22.6330398Z Collecting websockets>=10.4 (from uvicorn[standard]->-r requirements.txt (line 2))
+validate	Install tooling	2026-02-18T01:05:22.6528506Z   Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+validate	Install tooling	2026-02-18T01:05:22.8883927Z Collecting SQLAlchemy<2.1.0,>=2.0.14 (from sqlmodel->-r requirements.txt (line 3))
+validate	Install tooling	2026-02-18T01:05:22.9082911Z   Downloading sqlalchemy-2.0.46-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+validate	Install tooling	2026-02-18T01:05:23.0326786Z Collecting greenlet>=1 (from SQLAlchemy<2.1.0,>=2.0.14->sqlmodel->-r requirements.txt (line 3))
+validate	Install tooling	2026-02-18T01:05:23.0544982Z   Downloading greenlet-3.3.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.7 kB)
+validate	Install tooling	2026-02-18T01:05:23.0890295Z Collecting certifi (from httpx->-r requirements.txt (line 4))
+validate	Install tooling	2026-02-18T01:05:23.1085793Z   Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-18T01:05:23.1389790Z Collecting httpcore==1.* (from httpx->-r requirements.txt (line 4))
+validate	Install tooling	2026-02-18T01:05:23.1586531Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+validate	Install tooling	2026-02-18T01:05:23.2247028Z Collecting jsonschema<5.0.0,>=4.18.0 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.2444752Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+validate	Install tooling	2026-02-18T01:05:23.2728454Z Collecting jsonschema-path<0.4.0,>=0.3.1 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.2936954Z   Downloading jsonschema_path-0.3.4-py3-none-any.whl.metadata (4.3 kB)
+validate	Install tooling	2026-02-18T01:05:23.3382079Z Collecting lazy-object-proxy<2.0.0,>=1.7.1 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.3589230Z   Downloading lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (5.1 kB)
+validate	Install tooling	2026-02-18T01:05:23.3892204Z Collecting openapi-schema-validator<0.7.0,>=0.6.0 (from openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.4103760Z   Downloading openapi_schema_validator-0.6.3-py3-none-any.whl.metadata (5.4 kB)
+validate	Install tooling	2026-02-18T01:05:23.4393517Z Collecting attrs>=22.2.0 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.4587579Z   Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+validate	Install tooling	2026-02-18T01:05:23.4863595Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.5059125Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+validate	Install tooling	2026-02-18T01:05:23.5404808Z Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.5600764Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+validate	Install tooling	2026-02-18T01:05:23.7897443Z Collecting rpds-py>=0.25.0 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.8095371Z   Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+validate	Install tooling	2026-02-18T01:05:23.8374941Z Collecting pathable<0.5.0,>=0.4.1 (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.8585398Z   Downloading pathable-0.4.4-py3-none-any.whl.metadata (1.8 kB)
+validate	Install tooling	2026-02-18T01:05:23.8634899Z Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.8838797Z   Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+validate	Install tooling	2026-02-18T01:05:23.9188673Z Collecting requests<3.0.0,>=2.31.0 (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.9386934Z   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+validate	Install tooling	2026-02-18T01:05:23.9701975Z Collecting rfc3339-validator (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:23.9910129Z   Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+validate	Install tooling	2026-02-18T01:05:24.0738137Z Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:24.0938364Z   Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+validate	Install tooling	2026-02-18T01:05:24.1755473Z Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator->-r requirements.txt (line 5))
+validate	Install tooling	2026-02-18T01:05:24.1950831Z   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+validate	Install tooling	2026-02-18T01:05:24.2311155Z Collecting jinja2<4.0.0,>=3.0.0 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.2505631Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+validate	Install tooling	2026-02-18T01:05:24.3688353Z Collecting ruamel-yaml<0.20.0,>=0.18.6 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.3889241Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+validate	Install tooling	2026-02-18T01:05:24.7241043Z Collecting ruff>=0.2 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.7443314Z   Downloading ruff-0.15.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (26 kB)
+validate	Install tooling	2026-02-18T01:05:24.7733074Z Collecting shellingham<2.0.0,>=1.3.2 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.7926967Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+validate	Install tooling	2026-02-18T01:05:24.8247583Z Collecting typer<0.24,>0.16 (from openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.8444061Z   Downloading typer-0.23.2-py3-none-any.whl.metadata (16 kB)
+validate	Install tooling	2026-02-18T01:05:24.8741031Z Collecting six>=1.5 (from python-dateutil->-r requirements.txt (line 7))
+validate	Install tooling	2026-02-18T01:05:24.8937365Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+validate	Install tooling	2026-02-18T01:05:24.9520599Z Collecting MarkupSafe>=2.0 (from jinja2<4.0.0,>=3.0.0->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:24.9717413Z   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+validate	Install tooling	2026-02-18T01:05:24.9985234Z Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:25.0184574Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+validate	Install tooling	2026-02-18T01:05:25.6082837Z Collecting pydantic-core==2.41.5 (from pydantic>=2.7.0->fastapi->-r requirements.txt (line 1))
+validate	Install tooling	2026-02-18T01:05:25.6280266Z   Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+validate	Install tooling	2026-02-18T01:05:25.6747867Z Collecting rich>=12.3.0 (from typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:25.6948710Z   Downloading rich-14.3.2-py3-none-any.whl.metadata (18 kB)
+validate	Install tooling	2026-02-18T01:05:25.7474417Z Collecting bcrypt>=3.1.0 (from passlib[bcrypt]->-r requirements.txt (line 8))
+validate	Install tooling	2026-02-18T01:05:25.7671711Z   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+validate	Install tooling	2026-02-18T01:05:25.7986154Z Collecting ecdsa!=0.15 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:25.8179689Z   Downloading ecdsa-0.19.1-py2.py3-none-any.whl.metadata (29 kB)
+validate	Install tooling	2026-02-18T01:05:25.8491556Z Collecting rsa!=4.1.1,!=4.4,<5.0,>=4.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:25.8686848Z   Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+validate	Install tooling	2026-02-18T01:05:25.9036160Z Collecting pyasn1>=0.5.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:25.9237377Z   Downloading pyasn1-0.6.2-py3-none-any.whl.metadata (8.4 kB)
+validate	Install tooling	2026-02-18T01:05:26.0748007Z Collecting cryptography>=3.4.0 (from python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:26.0960992Z   Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+validate	Install tooling	2026-02-18T01:05:26.1271293Z Collecting iniconfig>=1.0.1 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-18T01:05:26.1465498Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-18T01:05:26.1758455Z Collecting packaging>=22 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-18T01:05:26.1953053Z   Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+validate	Install tooling	2026-02-18T01:05:26.2225875Z Collecting pluggy<2,>=1.5 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-18T01:05:26.2418803Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+validate	Install tooling	2026-02-18T01:05:26.2748974Z Collecting pygments>=2.7.2 (from pytest->-r requirements.txt (line 12))
+validate	Install tooling	2026-02-18T01:05:26.2942769Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+validate	Install tooling	2026-02-18T01:05:26.4877996Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:26.5082662Z   Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+validate	Install tooling	2026-02-18T01:05:26.5365171Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->python-jose[cryptography]->-r requirements.txt (line 9))
+validate	Install tooling	2026-02-18T01:05:26.5565175Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+validate	Install tooling	2026-02-18T01:05:26.5950485Z Collecting markdown-it-py>=2.2.0 (from rich>=12.3.0->typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:26.6150165Z   Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+validate	Install tooling	2026-02-18T01:05:26.6445938Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.3.0->typer<0.24,>0.16->openapi-python-client->-r requirements.txt (line 6))
+validate	Install tooling	2026-02-18T01:05:26.6640344Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+validate	Install tooling	2026-02-18T01:05:26.6957367Z Downloading fastapi-0.129.0-py3-none-any.whl (102 kB)
+validate	Install tooling	2026-02-18T01:05:26.7220284Z Downloading starlette-0.52.1-py3-none-any.whl (74 kB)
+validate	Install tooling	2026-02-18T01:05:26.7457514Z Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+validate	Install tooling	2026-02-18T01:05:26.7705921Z Downloading uvicorn-0.41.0-py3-none-any.whl (68 kB)
+validate	Install tooling	2026-02-18T01:05:26.7935608Z Downloading sqlmodel-0.0.34-py3-none-any.whl (27 kB)
+validate	Install tooling	2026-02-18T01:05:26.8157418Z Downloading sqlalchemy-2.0.46-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+validate	Install tooling	2026-02-18T01:05:26.8865023Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 60.1 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:26.9060600Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+validate	Install tooling	2026-02-18T01:05:26.9278117Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+validate	Install tooling	2026-02-18T01:05:26.9504509Z Downloading openapi_spec_validator-0.7.2-py3-none-any.whl (39 kB)
+validate	Install tooling	2026-02-18T01:05:26.9720114Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+validate	Install tooling	2026-02-18T01:05:26.9946623Z Downloading jsonschema_path-0.3.4-py3-none-any.whl (14 kB)
+validate	Install tooling	2026-02-18T01:05:27.0172087Z Downloading lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (68 kB)
+validate	Install tooling	2026-02-18T01:05:27.0393123Z Downloading openapi_schema_validator-0.6.3-py3-none-any.whl (8.8 kB)
+validate	Install tooling	2026-02-18T01:05:27.0608082Z Downloading pathable-0.4.4-py3-none-any.whl (9.6 kB)
+validate	Install tooling	2026-02-18T01:05:27.0819897Z Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+validate	Install tooling	2026-02-18T01:05:27.1035389Z Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+validate	Install tooling	2026-02-18T01:05:27.1250862Z Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (151 kB)
+validate	Install tooling	2026-02-18T01:05:27.1467804Z Downloading idna-3.11-py3-none-any.whl (71 kB)
+validate	Install tooling	2026-02-18T01:05:27.1680307Z Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+validate	Install tooling	2026-02-18T01:05:27.1913116Z Downloading openapi_python_client-0.28.2-py3-none-any.whl (183 kB)
+validate	Install tooling	2026-02-18T01:05:27.2132305Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+validate	Install tooling	2026-02-18T01:05:27.2359932Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+validate	Install tooling	2026-02-18T01:05:27.2579841Z Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+validate	Install tooling	2026-02-18T01:05:27.2819760Z Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+validate	Install tooling	2026-02-18T01:05:27.2976655Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 142.6 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:27.3176985Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+validate	Install tooling	2026-02-18T01:05:27.3517927Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+validate	Install tooling	2026-02-18T01:05:27.3767217Z Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+validate	Install tooling	2026-02-18T01:05:27.4229917Z Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+validate	Install tooling	2026-02-18T01:05:27.4289621Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 80.6 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:27.4484277Z Downloading python_jose-3.5.0-py2.py3-none-any.whl (34 kB)
+validate	Install tooling	2026-02-18T01:05:27.4698626Z Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+validate	Install tooling	2026-02-18T01:05:27.4923807Z Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+validate	Install tooling	2026-02-18T01:05:27.5156066Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+validate	Install tooling	2026-02-18T01:05:27.5372175Z Downloading pytest_asyncio-1.3.0-py3-none-any.whl (15 kB)
+validate	Install tooling	2026-02-18T01:05:27.5585808Z Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+validate	Install tooling	2026-02-18T01:05:27.5802263Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+validate	Install tooling	2026-02-18T01:05:27.6017632Z Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+validate	Install tooling	2026-02-18T01:05:27.6238606Z Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl (278 kB)
+validate	Install tooling	2026-02-18T01:05:27.6465061Z Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+validate	Install tooling	2026-02-18T01:05:27.6685765Z Downloading click-8.3.1-py3-none-any.whl (108 kB)
+validate	Install tooling	2026-02-18T01:05:27.6911003Z Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+validate	Install tooling	2026-02-18T01:05:27.7199924Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 165.0 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:27.7397834Z Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+validate	Install tooling	2026-02-18T01:05:27.7620081Z Downloading ecdsa-0.19.1-py2.py3-none-any.whl (150 kB)
+validate	Install tooling	2026-02-18T01:05:27.7845842Z Downloading greenlet-3.3.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (590 kB)
+validate	Install tooling	2026-02-18T01:05:27.7909227Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 590.3/590.3 kB 85.3 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:27.8109537Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+validate	Install tooling	2026-02-18T01:05:27.8339739Z Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (456 kB)
+validate	Install tooling	2026-02-18T01:05:27.8579643Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+validate	Install tooling	2026-02-18T01:05:27.8814415Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+validate	Install tooling	2026-02-18T01:05:27.9033324Z Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+validate	Install tooling	2026-02-18T01:05:27.9251457Z Downloading packaging-26.0-py3-none-any.whl (74 kB)
+validate	Install tooling	2026-02-18T01:05:27.9475842Z Downloading pyasn1-0.6.2-py3-none-any.whl (83 kB)
+validate	Install tooling	2026-02-18T01:05:27.9699578Z Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+validate	Install tooling	2026-02-18T01:05:27.9782616Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 160.4 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:27.9975966Z Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+validate	Install tooling	2026-02-18T01:05:28.0192032Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+validate	Install tooling	2026-02-18T01:05:28.0261240Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 115.5 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:28.0457220Z Downloading rich-14.3.2-py3-none-any.whl (309 kB)
+validate	Install tooling	2026-02-18T01:05:28.0683491Z Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+validate	Install tooling	2026-02-18T01:05:28.0907317Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+validate	Install tooling	2026-02-18T01:05:28.1125693Z Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (390 kB)
+validate	Install tooling	2026-02-18T01:05:28.1363244Z Downloading ruff-0.15.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.1 MB)
+validate	Install tooling	2026-02-18T01:05:28.1990060Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 182.7 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:28.2199775Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+validate	Install tooling	2026-02-18T01:05:28.2418519Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+validate	Install tooling	2026-02-18T01:05:28.2648184Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+validate	Install tooling	2026-02-18T01:05:28.2885974Z Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+validate	Install tooling	2026-02-18T01:05:28.3096374Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 196.6 MB/s  0:00:00
+validate	Install tooling	2026-02-18T01:05:28.3292639Z Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+validate	Install tooling	2026-02-18T01:05:28.3541167Z Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (184 kB)
+validate	Install tooling	2026-02-18T01:05:28.3765874Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+validate	Install tooling	2026-02-18T01:05:28.3983546Z Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+validate	Install tooling	2026-02-18T01:05:28.5493711Z Installing collected packages: passlib, websockets, uvloop, urllib3, typing-extensions, six, shellingham, ruff, ruamel-yaml, rpds-py, pyyaml, python-dotenv, pygments, pycparser, pyasn1, pluggy, pathable, packaging, mdurl, MarkupSafe, lazy-object-proxy, iniconfig, idna, httptools, h11, greenlet, click, charset_normalizer, certifi, bcrypt, attrs, annotated-types, annotated-doc, uvicorn, typing-inspection, SQLAlchemy, rsa, rfc3339-validator, requests, referencing, python-dateutil, pytest, pydantic-core, markdown-it-py, jinja2, httpcore, ecdsa, cffi, anyio, watchfiles, starlette, rich, python-jose, pytest-asyncio, pydantic, jsonschema-specifications, jsonschema-path, httpx, cryptography, typer, sqlmodel, jsonschema, fastapi, openapi-schema-validator, openapi-python-client, openapi-spec-validator
+validate	Install tooling	2026-02-18T01:05:34.1664206Z 
+validate	Install tooling	2026-02-18T01:05:34.1696301Z Successfully installed MarkupSafe-3.0.3 SQLAlchemy-2.0.46 annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.12.1 attrs-25.4.0 bcrypt-5.0.0 certifi-2026.1.4 cffi-2.0.0 charset_normalizer-3.4.4 click-8.3.1 cryptography-46.0.5 ecdsa-0.19.1 fastapi-0.129.0 greenlet-3.3.1 h11-0.16.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 idna-3.11 iniconfig-2.3.0 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-path-0.3.4 jsonschema-specifications-2025.9.1 lazy-object-proxy-1.12.0 markdown-it-py-4.0.0 mdurl-0.1.2 openapi-python-client-0.28.2 openapi-schema-validator-0.6.3 openapi-spec-validator-0.7.2 packaging-26.0 passlib-1.7.4 pathable-0.4.4 pluggy-1.6.0 pyasn1-0.6.2 pycparser-3.0 pydantic-2.12.5 pydantic-core-2.41.5 pygments-2.19.2 pytest-9.0.2 pytest-asyncio-1.3.0 python-dateutil-2.9.0.post0 python-dotenv-1.2.1 python-jose-3.5.0 pyyaml-6.0.3 referencing-0.36.2 requests-2.32.5 rfc3339-validator-0.1.4 rich-14.3.2 rpds-py-0.30.0 rsa-4.9.1 ruamel-yaml-0.19.1 ruff-0.15.1 shellingham-1.5.4 six-1.17.0 sqlmodel-0.0.34 starlette-0.52.1 typer-0.23.2 typing-extensions-4.15.0 typing-inspection-0.4.2 urllib3-2.6.3 uvicorn-0.41.0 uvloop-0.22.1 watchfiles-1.1.1 websockets-16.0
+validate	Install tooling	2026-02-18T01:05:35.0666826Z Requirement already satisfied: openapi-spec-validator in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (0.7.2)
+validate	Install tooling	2026-02-18T01:05:35.0669843Z Requirement already satisfied: ruff in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (0.15.1)
+validate	Install tooling	2026-02-18T01:05:35.0682374Z Requirement already satisfied: jsonschema<5.0.0,>=4.18.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (4.26.0)
+validate	Install tooling	2026-02-18T01:05:35.0688035Z Requirement already satisfied: jsonschema-path<0.4.0,>=0.3.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (0.3.4)
+validate	Install tooling	2026-02-18T01:05:35.0692960Z Requirement already satisfied: lazy-object-proxy<2.0.0,>=1.7.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (1.12.0)
+validate	Install tooling	2026-02-18T01:05:35.0697876Z Requirement already satisfied: openapi-schema-validator<0.7.0,>=0.6.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-spec-validator) (0.6.3)
+validate	Install tooling	2026-02-18T01:05:35.0707438Z Requirement already satisfied: attrs>=22.2.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (25.4.0)
+validate	Install tooling	2026-02-18T01:05:35.0712083Z Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (2025.9.1)
+validate	Install tooling	2026-02-18T01:05:35.0716763Z Requirement already satisfied: referencing>=0.28.4 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (0.36.2)
+validate	Install tooling	2026-02-18T01:05:35.0720650Z Requirement already satisfied: rpds-py>=0.25.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (0.30.0)
+validate	Install tooling	2026-02-18T01:05:35.0737761Z Requirement already satisfied: PyYAML>=5.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (6.0.3)
+validate	Install tooling	2026-02-18T01:05:35.0742267Z Requirement already satisfied: pathable<0.5.0,>=0.4.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (0.4.4)
+validate	Install tooling	2026-02-18T01:05:35.0748852Z Requirement already satisfied: requests<3.0.0,>=2.31.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2.32.5)
+validate	Install tooling	2026-02-18T01:05:35.0764547Z Requirement already satisfied: rfc3339-validator in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator) (0.1.4)
+validate	Install tooling	2026-02-18T01:05:35.0781126Z Requirement already satisfied: typing-extensions>=4.4.0 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from referencing>=0.28.4->jsonschema<5.0.0,>=4.18.0->openapi-spec-validator) (4.15.0)
+validate	Install tooling	2026-02-18T01:05:35.0791898Z Requirement already satisfied: charset_normalizer<4,>=2 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (3.4.4)
+validate	Install tooling	2026-02-18T01:05:35.0795996Z Requirement already satisfied: idna<4,>=2.5 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (3.11)
+validate	Install tooling	2026-02-18T01:05:35.0799893Z Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2.6.3)
+validate	Install tooling	2026-02-18T01:05:35.0803779Z Requirement already satisfied: certifi>=2017.4.17 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from requests<3.0.0,>=2.31.0->jsonschema-path<0.4.0,>=0.3.1->openapi-spec-validator) (2026.1.4)
+validate	Install tooling	2026-02-18T01:05:35.0887156Z Requirement already satisfied: six in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from rfc3339-validator->openapi-schema-validator<0.7.0,>=0.6.0->openapi-spec-validator) (1.17.0)
+validate	Lint (ruff)	﻿2026-02-18T01:05:35.1751057Z ##[group]Run echo "Running ruff lint..."
+validate	Lint (ruff)	2026-02-18T01:05:35.1751387Z [36;1mecho "Running ruff lint..."[0m
+validate	Lint (ruff)	2026-02-18T01:05:35.1751641Z [36;1mruff check .[0m
+validate	Lint (ruff)	2026-02-18T01:05:35.1807638Z shell: /usr/bin/bash -e {0}
+validate	Lint (ruff)	2026-02-18T01:05:35.1807879Z env:
+validate	Lint (ruff)	2026-02-18T01:05:35.1808133Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-18T01:05:35.1808547Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib/pkgconfig
+validate	Lint (ruff)	2026-02-18T01:05:35.1808932Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-18T01:05:35.1809294Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-18T01:05:35.1809626Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.14/x64
+validate	Lint (ruff)	2026-02-18T01:05:35.1809967Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.14/x64/lib
+validate	Lint (ruff)	2026-02-18T01:05:35.1810263Z ##[endgroup]
+validate	Lint (ruff)	2026-02-18T01:05:35.1888232Z Running ruff lint...
+validate	Lint (ruff)	2026-02-18T01:05:35.1972029Z I001 [*] Import block is un-sorted or un-formatted
+validate	Lint (ruff)	2026-02-18T01:05:35.1973333Z  --> generated_client/moral_money_investing_api_client/client.py:1:1
+validate	Lint (ruff)	2026-02-18T01:05:35.1973966Z   |
+validate	Lint (ruff)	2026-02-18T01:05:35.1974208Z 1 | / import ssl
+validate	Lint (ruff)	2026-02-18T01:05:35.1974495Z 2 | | from typing import Any
+validate	Lint (ruff)	2026-02-18T01:05:35.1974819Z 3 | |
+validate	Lint (ruff)	2026-02-18T01:05:35.1975099Z 4 | | from attrs import define, field, evolve
+validate	Lint (ruff)	2026-02-18T01:05:35.1975507Z 5 | | import httpx
+validate	Lint (ruff)	2026-02-18T01:05:35.1975763Z   | |____________^
+validate	Lint (ruff)	2026-02-18T01:05:35.1976011Z   |
+validate	Lint (ruff)	2026-02-18T01:05:35.1976256Z help: Organize imports
+validate	Lint (ruff)	2026-02-18T01:05:35.1976705Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1977089Z I001 [*] Import block is un-sorted or un-formatted
+validate	Lint (ruff)	2026-02-18T01:05:35.1977665Z  --> generated_client/moral_money_investing_api_client/types.py:3:1
+validate	Lint (ruff)	2026-02-18T01:05:35.1978178Z   |
+validate	Lint (ruff)	2026-02-18T01:05:35.1978479Z 1 |   """ Contains some shared types for properties """
+validate	Lint (ruff)	2026-02-18T01:05:35.1978893Z 2 |
+validate	Lint (ruff)	2026-02-18T01:05:35.1979210Z 3 | / from collections.abc import Mapping, MutableMapping
+validate	Lint (ruff)	2026-02-18T01:05:35.1979665Z 4 | | from http import HTTPStatus
+validate	Lint (ruff)	2026-02-18T01:05:35.1980120Z 5 | | from typing import BinaryIO, Generic, TypeVar, Literal, IO
+validate	Lint (ruff)	2026-02-18T01:05:35.1980594Z 6 | |
+validate	Lint (ruff)	2026-02-18T01:05:35.1980848Z 7 | | from attrs import define
+validate	Lint (ruff)	2026-02-18T01:05:35.1981159Z   | |________________________^
+validate	Lint (ruff)	2026-02-18T01:05:35.1981446Z   |
+validate	Lint (ruff)	2026-02-18T01:05:35.1981711Z help: Organize imports
+validate	Lint (ruff)	2026-02-18T01:05:35.1981913Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1982053Z E741 Ambiguous variable name: `l`
+validate	Lint (ruff)	2026-02-18T01:05:35.1982661Z   --> scripts/example_client.py:28:9
+validate	Lint (ruff)	2026-02-18T01:05:35.1983051Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1983276Z 26 |     try:
+validate	Lint (ruff)	2026-02-18T01:05:35.1983711Z 27 |         login_payload = {"email": "test@example.com", "password": "testpass"}
+validate	Lint (ruff)	2026-02-18T01:05:35.1984414Z 28 |         l = httpx_client.post("/api/v1/auth/login", json=login_payload)
+validate	Lint (ruff)	2026-02-18T01:05:35.1984896Z    |         ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1985195Z 29 |         print("login ->", l.status_code)
+validate	Lint (ruff)	2026-02-18T01:05:35.1985508Z 30 |         if l.status_code == 200:
+validate	Lint (ruff)	2026-02-18T01:05:35.1985795Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1985887Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1986008Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.1986282Z   --> scripts/generate_openapi_full.py:88:1
+validate	Lint (ruff)	2026-02-18T01:05:35.1986526Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1986670Z 86 | }
+validate	Lint (ruff)	2026-02-18T01:05:35.1986817Z 87 |
+validate	Lint (ruff)	2026-02-18T01:05:35.1987005Z 88 | p["/api/v1/providers/{providerId}"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.1987249Z    | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1987396Z 89 |   "put": {
+validate	Lint (ruff)	2026-02-18T01:05:35.1987598Z 90 |     "summary": "Update provider (admin)",
+validate	Lint (ruff)	2026-02-18T01:05:35.1987837Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1987925Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1988081Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.1988683Z   --> scripts/generate_openapi_full.py:88:37
+validate	Lint (ruff)	2026-02-18T01:05:35.1989016Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1989254Z 86 | }
+validate	Lint (ruff)	2026-02-18T01:05:35.1989480Z 87 |
+validate	Lint (ruff)	2026-02-18T01:05:35.1989764Z 88 | p["/api/v1/providers/{providerId}"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.1990158Z    |                                     ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1990513Z 89 |   "put": {
+validate	Lint (ruff)	2026-02-18T01:05:35.1990789Z 90 |     "summary": "Update provider (admin)",
+validate	Lint (ruff)	2026-02-18T01:05:35.1991263Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.1991352Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1991451Z invalid-syntax: Expected `:`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.1991722Z    --> scripts/generate_openapi_full.py:102:1
+validate	Lint (ruff)	2026-02-18T01:05:35.1991967Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1992133Z 100 | }
+validate	Lint (ruff)	2026-02-18T01:05:35.1992286Z 101 |
+validate	Lint (ruff)	2026-02-18T01:05:35.1992693Z 102 | p["/api/v1/providers/{providerId}/sync"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.1992984Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1993137Z 103 |   "post": {
+validate	Lint (ruff)	2026-02-18T01:05:35.1993346Z 104 |     "summary": "Trigger provider sync",
+validate	Lint (ruff)	2026-02-18T01:05:35.1993570Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1993651Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1993749Z invalid-syntax: Expected `,`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.1994011Z    --> scripts/generate_openapi_full.py:102:42
+validate	Lint (ruff)	2026-02-18T01:05:35.1994251Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1994397Z 100 | }
+validate	Lint (ruff)	2026-02-18T01:05:35.1994550Z 101 |
+validate	Lint (ruff)	2026-02-18T01:05:35.1994741Z 102 | p["/api/v1/providers/{providerId}/sync"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.1995021Z     |                                          ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1995259Z 103 |   "post": {
+validate	Lint (ruff)	2026-02-18T01:05:35.1995460Z 104 |     "summary": "Trigger provider sync",
+validate	Lint (ruff)	2026-02-18T01:05:35.1995698Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1995782Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1995872Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.1996136Z    --> scripts/generate_openapi_full.py:111:1
+validate	Lint (ruff)	2026-02-18T01:05:35.1996370Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1996526Z 110 | # Tags
+validate	Lint (ruff)	2026-02-18T01:05:35.1996696Z 111 | p["/api/v1/tags"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.1997064Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.1997930Z 112 |   "get": {"summary": "List tags", "responses": {"200": {"description": "Tags list", "content": {"application/json": {"schema": {"type…
+validate	Lint (ruff)	2026-02-18T01:05:35.1998768Z 113 |   "post": {"summary": "Create tag", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/componen…
+validate	Lint (ruff)	2026-02-18T01:05:35.1999256Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.1999350Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.1999450Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.1999734Z    --> scripts/generate_openapi_full.py:111:19
+validate	Lint (ruff)	2026-02-18T01:05:35.1999995Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2000155Z 110 | # Tags
+validate	Lint (ruff)	2026-02-18T01:05:35.2000330Z 111 | p["/api/v1/tags"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2000548Z     |                   ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2001101Z 112 |   "get": {"summary": "List tags", "responses": {"200": {"description": "Tags list", "content": {"application/json": {"schema": {"type…
+validate	Lint (ruff)	2026-02-18T01:05:35.2001905Z 113 |   "post": {"summary": "Create tag", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/componen…
+validate	Lint (ruff)	2026-02-18T01:05:35.2002396Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2002722Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2002821Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2003106Z    --> scripts/generate_openapi_full.py:116:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2003353Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2003506Z 115 | # Instruments
+validate	Lint (ruff)	2026-02-18T01:05:35.2003706Z 116 | p["/api/v1/instruments"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2003923Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2004415Z 117 |   "get": {"summary": "List instruments", "responses": {"200": {"description": "Instruments", "content": {"application/json": {"schema…
+validate	Lint (ruff)	2026-02-18T01:05:35.2005226Z 118 |   "post": {"summary": "Create instrument", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/c…
+validate	Lint (ruff)	2026-02-18T01:05:35.2005721Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2005810Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2005903Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.2006183Z    --> scripts/generate_openapi_full.py:116:26
+validate	Lint (ruff)	2026-02-18T01:05:35.2006437Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2006592Z 115 | # Instruments
+validate	Lint (ruff)	2026-02-18T01:05:35.2006793Z 116 | p["/api/v1/instruments"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2007011Z     |                          ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2007529Z 117 |   "get": {"summary": "List instruments", "responses": {"200": {"description": "Instruments", "content": {"application/json": {"schema…
+validate	Lint (ruff)	2026-02-18T01:05:35.2008300Z 118 |   "post": {"summary": "Create instrument", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/c…
+validate	Lint (ruff)	2026-02-18T01:05:35.2008980Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2009071Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2009173Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2009441Z    --> scripts/generate_openapi_full.py:121:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2009682Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2009840Z 120 | # Preferences
+validate	Lint (ruff)	2026-02-18T01:05:35.2010048Z 121 | p["/api/v1/users/me/preferences"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2010283Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2010827Z 122 |   "get": {"summary": "Get current user's preferences", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "resp…
+validate	Lint (ruff)	2026-02-18T01:05:35.2011662Z 123 |   "post": {"summary": "Add preference for current user", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "re…
+validate	Lint (ruff)	2026-02-18T01:05:35.2012137Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2012225Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2012324Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.2012883Z    --> scripts/generate_openapi_full.py:121:35
+validate	Lint (ruff)	2026-02-18T01:05:35.2013139Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2013303Z 120 | # Preferences
+validate	Lint (ruff)	2026-02-18T01:05:35.2013509Z 121 | p["/api/v1/users/me/preferences"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2013755Z     |                                   ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2014318Z 122 |   "get": {"summary": "Get current user's preferences", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "resp…
+validate	Lint (ruff)	2026-02-18T01:05:35.2015121Z 123 |   "post": {"summary": "Add preference for current user", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "re…
+validate	Lint (ruff)	2026-02-18T01:05:35.2015748Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2015841Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2015935Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2016200Z    --> scripts/generate_openapi_full.py:126:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2016439Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2016591Z 125 | # Watchlist
+validate	Lint (ruff)	2026-02-18T01:05:35.2016784Z 126 | p["/api/v1/users/me/watchlist"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2017013Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2017495Z 127 |   "get": {"summary": "Get current user's watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "respon…
+validate	Lint (ruff)	2026-02-18T01:05:35.2018322Z 128 |   "post": {"summary": "Add to watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"r…
+validate	Lint (ruff)	2026-02-18T01:05:35.2018806Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2018908Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2019003Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.2019287Z    --> scripts/generate_openapi_full.py:126:33
+validate	Lint (ruff)	2026-02-18T01:05:35.2019531Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2019700Z 125 | # Watchlist
+validate	Lint (ruff)	2026-02-18T01:05:35.2019894Z 126 | p["/api/v1/users/me/watchlist"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2020139Z     |                                 ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2020670Z 127 |   "get": {"summary": "Get current user's watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "respon…
+validate	Lint (ruff)	2026-02-18T01:05:35.2021471Z 128 |   "post": {"summary": "Add to watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"r…
+validate	Lint (ruff)	2026-02-18T01:05:35.2021957Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2022042Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2022135Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2022410Z    --> scripts/generate_openapi_full.py:131:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2023071Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2023232Z 130 | # Allocate
+validate	Lint (ruff)	2026-02-18T01:05:35.2023420Z 131 | p["/api/v1/allocate"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2023640Z     | ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2024136Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-18T01:05:35.2024645Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2024734Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2024835Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.2025105Z    --> scripts/generate_openapi_full.py:131:23
+validate	Lint (ruff)	2026-02-18T01:05:35.2025351Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2025500Z 130 | # Allocate
+validate	Lint (ruff)	2026-02-18T01:05:35.2025684Z 131 | p["/api/v1/allocate"] = {
+validate	Lint (ruff)	2026-02-18T01:05:35.2025898Z     |                       ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2026442Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-18T01:05:35.2027109Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2027199Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2027300Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2027571Z    --> scripts/generate_openapi_full.py:134:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2027821Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2028292Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-18T01:05:35.2028788Z 133 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2028956Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2029165Z     | ^^^^
+validate	Lint (ruff)	2026-02-18T01:05:35.2029319Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2029554Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2029856Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2029940Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2030035Z invalid-syntax: Expected `:`, found `=`
+validate	Lint (ruff)	2026-02-18T01:05:35.2030317Z    --> scripts/generate_openapi_full.py:134:15
+validate	Lint (ruff)	2026-02-18T01:05:35.2030554Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2031064Z 132 |   "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestB…
+validate	Lint (ruff)	2026-02-18T01:05:35.2031563Z 133 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2031726Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2031920Z     |               ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2032090Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2032318Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2032870Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2033103Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2033216Z invalid-syntax: Expected `:`, found `with`
+validate	Lint (ruff)	2026-02-18T01:05:35.2033492Z    --> scripts/generate_openapi_full.py:136:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2033735Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2033892Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2034075Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2034290Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2034573Z     | ^^^^
+validate	Lint (ruff)	2026-02-18T01:05:35.2034792Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-18T01:05:35.2035054Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2035149Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2035252Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2035514Z    --> scripts/generate_openapi_full.py:136:6
+validate	Lint (ruff)	2026-02-18T01:05:35.2035749Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2035902Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2036085Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2036298Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2036582Z     |      ^^^^
+validate	Lint (ruff)	2026-02-18T01:05:35.2036807Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-18T01:05:35.2037067Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2037149Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2037250Z invalid-syntax: Expected `:`, found `as`
+validate	Lint (ruff)	2026-02-18T01:05:35.2037505Z    --> scripts/generate_openapi_full.py:136:55
+validate	Lint (ruff)	2026-02-18T01:05:35.2037745Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2037896Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2038073Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2038280Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2038595Z     |                                                       ^^
+validate	Lint (ruff)	2026-02-18T01:05:35.2038901Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-18T01:05:35.2039150Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2039231Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2039328Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2039574Z    --> scripts/generate_openapi_full.py:136:58
+validate	Lint (ruff)	2026-02-18T01:05:35.2039814Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2039961Z 134 | spec["paths"] = p
+validate	Lint (ruff)	2026-02-18T01:05:35.2040141Z 135 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2040351Z 136 | with open("openapi_full.json", "w", encoding="utf-8") as f:
+validate	Lint (ruff)	2026-02-18T01:05:35.2040663Z     |                                                          ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2040956Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-18T01:05:35.2041203Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2041285Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2041381Z invalid-syntax: Expected `,`, found name
+validate	Lint (ruff)	2026-02-18T01:05:35.2041627Z    --> scripts/generate_openapi_full.py:139:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2041859Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2042047Z 137 |     json.dump(spec, f, indent=2, ensure_ascii=False)
+validate	Lint (ruff)	2026-02-18T01:05:35.2042626Z 138 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2042805Z 139 | print("generated openapi_full.json")
+validate	Lint (ruff)	2026-02-18T01:05:35.2043039Z     | ^^^^^
+validate	Lint (ruff)	2026-02-18T01:05:35.2043197Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2043277Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2043383Z invalid-syntax: unexpected EOF while parsing
+validate	Lint (ruff)	2026-02-18T01:05:35.2043663Z    --> scripts/generate_openapi_full.py:140:1
+validate	Lint (ruff)	2026-02-18T01:05:35.2043889Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2044062Z 139 | print("generated openapi_full.json")
+validate	Lint (ruff)	2026-02-18T01:05:35.2044302Z     |                                     ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2044518Z     |
+validate	Lint (ruff)	2026-02-18T01:05:35.2044600Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2044687Z E741 Ambiguous variable name: `l`
+validate	Lint (ruff)	2026-02-18T01:05:35.2044925Z   --> tests/test_api_endpoints.py:36:9
+validate	Lint (ruff)	2026-02-18T01:05:35.2045151Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.2045324Z 34 |         assert r.status_code in (201, 400)
+validate	Lint (ruff)	2026-02-18T01:05:35.2045574Z 35 |
+validate	Lint (ruff)	2026-02-18T01:05:35.2045906Z 36 |         l = await client.get_async_httpx_client().post("/api/v1/auth/login", json=reg_payload)
+validate	Lint (ruff)	2026-02-18T01:05:35.2046306Z    |         ^
+validate	Lint (ruff)	2026-02-18T01:05:35.2046491Z 37 |         assert l.status_code == 200
+validate	Lint (ruff)	2026-02-18T01:05:35.2046739Z 38 |         body = l.json()
+validate	Lint (ruff)	2026-02-18T01:05:35.2046937Z    |
+validate	Lint (ruff)	2026-02-18T01:05:35.2047033Z 
+validate	Lint (ruff)	2026-02-18T01:05:35.2047101Z Found 26 errors.
+validate	Lint (ruff)	2026-02-18T01:05:35.2047321Z [*] 2 fixable with the `--fix` option.
+validate	Lint (ruff)	2026-02-18T01:05:35.2057241Z ##[error]Process completed with exit code 1.
+validate	Post Checkout	﻿2026-02-18T01:05:35.2163045Z Post job cleanup.
+validate	Post Checkout	2026-02-18T01:05:35.3124622Z [command]/usr/bin/git version
+validate	Post Checkout	2026-02-18T01:05:35.3171060Z git version 2.52.0
+validate	Post Checkout	2026-02-18T01:05:35.3213971Z Temporarily overriding HOME='/home/runner/work/_temp/ddd85644-3114-42a7-901c-85723de9497d' before making global git config changes
+validate	Post Checkout	2026-02-18T01:05:35.3215153Z Adding repository directory to the temporary git global config as a safe directory
+validate	Post Checkout	2026-02-18T01:05:35.3220539Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoralMoney-Investing/MoralMoney-Investing
+validate	Post Checkout	2026-02-18T01:05:35.3259054Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Post Checkout	2026-02-18T01:05:35.3295207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Post Checkout	2026-02-18T01:05:35.3562170Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Post Checkout	2026-02-18T01:05:35.3587209Z http.https://github.com/.extraheader
+validate	Post Checkout	2026-02-18T01:05:35.3600861Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+validate	Post Checkout	2026-02-18T01:05:35.3636520Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Post Checkout	2026-02-18T01:05:35.3909772Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Post Checkout	2026-02-18T01:05:35.3949361Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Complete job	﻿2026-02-18T01:05:35.4351654Z Cleaning up orphan processes
