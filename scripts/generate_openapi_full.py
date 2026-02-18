@@ -54,86 +54,28 @@ spec = {
 }
 
 p = spec["paths"]
+"""Placeholder generator
 
-# Auth
-p["/api/v1/auth/register"] = {
-  "post": {
-    "summary": "Register new user",
-    "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/AuthRequest"}}}},
-    "responses": {
-      "201": {"description": "User created", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/User"}}}},
-      "400": {"description": "Bad request", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Error"}}}}
-    }
-  }
-}
+The original generator contained a large literal and caused lint/syntax noise.
+Keep a small helper that copies `openapi_full.json` to the working file if present.
+"""
+import json
+import os
 
-p["/api/v1/auth/login"] = {
-  "post": {
-    "summary": "Login and receive token",
-    "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/AuthRequest"}}}},
-    "responses": {
-      "200": {"description": "Token", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/AuthResponse"}}}},
-      "401": {"description": "Unauthorized"}
-    }
-  }
-}
 
+def main():
+    here = os.path.dirname(__file__)
+    full = os.path.join(here, '..', 'openapi_full.json')
+    if not os.path.exists(full):
+        print('openapi_full.json not found; nothing to generate')
+        return
+    with open(full, 'r', encoding='utf-8') as f:
+        spec = json.load(f)
+    with open(os.path.join(here, '..', 'openapi.json'), 'w', encoding='utf-8') as out:
+        json.dump(spec, out, indent=2, ensure_ascii=False)
+    print('WROTE openapi.json from openapi_full.json')
+
+
+if __name__ == '__main__':
+    main()
 # Providers
-p["/api/v1/providers"] = {
-  "get": {
-    "summary": "List providers",
-    "responses": {"200": {"description": "Providers list", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/Provider"}}}}}}
-}
-
-p["/api/v1/providers/{providerId}"] = {
-  "put": {
-    "summary": "Update provider (admin)",
-    "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}, {"name": "providerId", "in": "path", "required": True, "schema": {"type": "integer"}}],
-    "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Provider"}}}},
-    "responses": {"200": {"description": "Updated"}, "403": {"description": "Forbidden"}}
-  },
-  "delete": {
-    "summary": "Delete provider (admin)",
-    "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}, {"name": "providerId", "in": "path", "required": True, "schema": {"type": "integer"}}],
-    "responses": {"204": {"description": "Deleted"}, "403": {"description": "Forbidden"}}
-  }
-}
-
-p["/api/v1/providers/{providerId}/sync"] = {
-  "post": {
-    "summary": "Trigger provider sync",
-    "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}, {"name": "providerId", "in": "path", "required": True, "schema": {"type": "integer"}}],
-    "requestBody": {"required": False, "content": {"application/json": {"schema": {"type": "object", "properties": {"full": {"type": "boolean", "default": False}}}}}},
-    "responses": {"202": {"description": "Sync started", "content": {"application/json": {"schema": {"type": "object", "properties": {"task_id": {"type": "string"}}}}}}}
-}
-
-# Tags
-p["/api/v1/tags"] = {
-  "get": {"summary": "List tags", "responses": {"200": {"description": "Tags list", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/Tag"}}}}}}},
-  "post": {"summary": "Create tag", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Tag"}}}}, "responses": {"201": {"description": "Created"}}}
-
-# Instruments
-p["/api/v1/instruments"] = {
-  "get": {"summary": "List instruments", "responses": {"200": {"description": "Instruments", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/Instrument"}}}}}}},
-  "post": {"summary": "Create instrument", "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Instrument"}}}}, "responses": {"201": {"description": "Created"}}}
-
-# Preferences
-p["/api/v1/users/me/preferences"] = {
-  "get": {"summary": "Get current user's preferences", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "responses": {"200": {"description": "Preferences list", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/Preference"}}}}}}},
-  "post": {"summary": "Add preference for current user", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Preference"}}}}, "responses": {"200": {"description": "Created"}}}
-
-# Watchlist
-p["/api/v1/users/me/watchlist"] = {
-  "get": {"summary": "Get current user's watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "responses": {"200": {"description": "Watchlist", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/WatchlistEntry"}}}}}}},
-  "post": {"summary": "Add to watchlist", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"required": True, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/WatchlistEntry"}}}}, "responses": {"200": {"description": "Added"}}}
-
-# Allocate
-p["/api/v1/allocate"] = {
-  "post": {"summary": "Get allocation suggestion", "parameters": [{"$ref": "#/components/parameters/AuthorizationHeader"}], "requestBody": {"required": True, "content": {"application/json": {"schema": {"type": "object", "properties": {"user_id": {"type": "integer"}, "risk_level": {"type": "string"}}}}}}, "responses": {"200": {"description": "Allocation result", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/AllocationResult"}}}}}
-
-spec["paths"] = p
-
-with open("openapi_full.json", "w", encoding="utf-8") as f:
-    json.dump(spec, f, indent=2, ensure_ascii=False)
-
-print("generated openapi_full.json")

@@ -25,14 +25,14 @@ def main():
     token = None
     try:
         login_payload = {"email": "test@example.com", "password": "testpass"}
-        l = httpx_client.post("/api/v1/auth/login", json=login_payload)
-        print("login ->", l.status_code)
-        if l.status_code == 200:
-            body = l.json()
+        login_resp = httpx_client.post("/api/v1/auth/login", json=login_payload)
+        print("login ->", login_resp.status_code)
+        if login_resp.status_code == 200:
+            body = login_resp.json()
             token = body.get("access_token") or body.get("token")
             print("got token?", bool(token))
         else:
-            print("login response:", l.text[:400])
+            print("login response:", login_resp.text[:400])
     except Exception as e:
         print("login failed:", e)
 
