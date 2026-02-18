@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install openapi-spec-validator ruff
+          pip install "pydantic[email]"
 
       - name: Lint (ruff)
         run: |
@@ -58,6 +59,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install pytest pytest-asyncio pytest-cov ruff
+          pip install "pydantic[email]"
 
       - name: Run tests with coverage
         run: |
