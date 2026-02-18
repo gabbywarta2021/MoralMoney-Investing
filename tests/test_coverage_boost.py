@@ -1,4 +1,5 @@
 import pytest
+from fastapi import HTTPException
 
 from backend.app import allocate as allocate_mod
 from backend.app import auth as auth_mod
@@ -74,25 +75,28 @@ def test_auth_register_and_login():
 
     user = U("x@example.com", hashed)
     db2 = FakeDB(result=user)
-    token = auth_mod.login(payload={"email": "x@example.com", "password": "secret"}, db=db2)
+    token = auth_mod.login(
+        payload={"email": "x@example.com", "password": "secret"},
+        db=db2,
+    )
     assert token["access_token"] == "x@example.com"
 
 
 def test_auth_register_missing_fields():
     db = FakeDB(result=None)
-    with pytest.raises(Exception):
+    with pytest.raises(HTTPException):
         auth_mod.register(payload={"email": "no-pass"}, db=db)
 
 
 def test_get_current_user_and_admin_checks():
     # missing header
     db = FakeDB(result=None)
-    with pytest.raises(Exception):
+    with pytest.raises(HTTPException):
         auth_mod.get_current_user(db=db, authorization=None)
 
     # invalid token
     db2 = FakeDB(result=None)
-    with pytest.raises(Exception):
+    with pytest.raises(HTTPException):
         auth_mod.get_current_user(db=db2, authorization="Bearer nope")
 
     # admin check
@@ -101,5 +105,5 @@ def test_get_current_user_and_admin_checks():
             self.is_admin = is_admin
 
     non_admin = U(is_admin=False)
-    with pytest.raises(Exception):
+    with pytest.raises(HTTPException):
         auth_mod.get_current_active_admin(current_user=non_admin)
