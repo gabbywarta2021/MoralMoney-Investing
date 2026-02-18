@@ -5,7 +5,8 @@ on:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
-    # refresh: small edit to force GitHub to pick up the new trigger
+    # refresh: removed invalid python '3.1' matrix entry; small edit
+    # to force GitHub to pick up the updated workflow trigger
 
 jobs:
   validate:
